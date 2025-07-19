@@ -829,7 +829,7 @@
       </p>
       
       <div class="contact-info">
-        <form action="https://formspree.io/f/xpzgwqjq" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/mldldqnv" method="POST" class="contact-form" id="contactForm">
           <div class="form-group">
             <input type="text" name="name" required placeholder="Nimi / Name" class="form-input">
           </div>
@@ -870,43 +870,7 @@
   </footer>
 
   <script>
-    // Copy email to clipboard function
-    function copyEmail() {
-      const email = 'info@brek.ee';
-      navigator.clipboard.writeText(email).then(function() {
-        // Show success message
-        const currentLang = localStorage.getItem('dso-lang') || 'et';
-        let message = 'Email copied!';
-        
-        if (currentLang === 'et') message = 'E-mail kopeeritud!';
-        else if (currentLang === 'fi') message = 'Sähköposti kopioitu!';
-        else if (currentLang === 'sv') message = 'E-post kopierad!';
-        
-        // Create temporary notification
-        const notification = document.createElement('div');
-        notification.textContent = message;
-        notification.style.cssText = `
-          position: fixed;
-          top: 20px;
-          right: 20px;
-          background: #F07228;
-          color: white;
-          padding: 12px 20px;
-          border-radius: 8px;
-          z-index: 1000;
-          font-weight: 600;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        `;
-        document.body.appendChild(notification);
-        
-        // Remove notification after 3 seconds
-        setTimeout(() => {
-          notification.remove();
-        }, 3000);
-      }).catch(function(err) {
-        console.error('Failed to copy email: ', err);
-      });
-    }
+
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
