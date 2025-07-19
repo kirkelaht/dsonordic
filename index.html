@@ -494,12 +494,12 @@
           <span data-lang="en" style="display:none;">Contact</span>
         </a></li>
       </ul>
-      <a href="mailto:info@brek.ee" class="cta-button">
+      <button onclick="copyEmail()" class="cta-button" style="background: none; border: none; cursor: pointer; font-family: inherit; font-size: inherit; color: inherit; padding: inherit; text-decoration: inherit;">
         <span data-lang="et">Küsi pakkumist</span>
         <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
         <span data-lang="sv" style="display:none;">Begär offert</span>
         <span data-lang="en" style="display:none;">Get an offer!</span>
-      </a>
+      </button>
       <div class="lang-switcher">
         <button class="lang-flag" data-lang-btn="et" title="Eesti" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇪🇪</button>
         <button class="lang-flag" data-lang-btn="fi" title="Suomi" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇫🇮</button>
@@ -537,12 +537,12 @@
       </div>
       
       <div class="hero-buttons">
-        <a href="mailto:info@brek.ee" class="cta-button">
+        <button onclick="copyEmail()" class="cta-button" style="background: none; border: none; cursor: pointer; font-family: inherit; font-size: inherit; color: inherit; padding: inherit; text-decoration: inherit;">
           <span data-lang="et">Küsi pakkumist</span>
           <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
           <span data-lang="sv" style="display:none;">Begär offert</span>
           <span data-lang="en" style="display:none;">Get an offer!</span>
-        </a>
+        </button>
         <a href="#miks-valida" class="secondary-button">
           <span data-lang="et">Loe rohkem</span>
           <span data-lang="fi" style="display:none;">Lue lisää</span>
@@ -791,12 +791,12 @@
       </p>
       
       <div class="contact-info">
-        <a href="mailto:info@brek.ee" class="cta-button">
+        <button onclick="copyEmail()" class="cta-button" style="background: none; border: none; cursor: pointer; font-family: inherit; font-size: inherit; color: inherit; padding: inherit; text-decoration: inherit;">
           <span data-lang="et">Küsi pakkumist</span>
           <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
           <span data-lang="sv" style="display:none;">Begär offert</span>
           <span data-lang="en" style="display:none;">Get an offer!</span>
-        </a>
+        </button>
       </div>
     </div>
   </section>
@@ -818,6 +818,44 @@
   </footer>
 
   <script>
+    // Copy email to clipboard function
+    function copyEmail() {
+      const email = 'info@brek.ee';
+      navigator.clipboard.writeText(email).then(function() {
+        // Show success message
+        const currentLang = localStorage.getItem('dso-lang') || 'et';
+        let message = 'Email copied!';
+        
+        if (currentLang === 'et') message = 'E-mail kopeeritud!';
+        else if (currentLang === 'fi') message = 'Sähköposti kopioitu!';
+        else if (currentLang === 'sv') message = 'E-post kopierad!';
+        
+        // Create temporary notification
+        const notification = document.createElement('div');
+        notification.textContent = message;
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: #F07228;
+          color: white;
+          padding: 12px 20px;
+          border-radius: 8px;
+          z-index: 1000;
+          font-weight: 600;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        `;
+        document.body.appendChild(notification);
+        
+        // Remove notification after 3 seconds
+        setTimeout(() => {
+          notification.remove();
+        }, 3000);
+      }).catch(function(err) {
+        console.error('Failed to copy email: ', err);
+      });
+    }
+
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
