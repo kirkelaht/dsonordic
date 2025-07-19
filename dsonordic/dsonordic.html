@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSO Nordic - Masinate ja sõidukite desinfitseerimisvärav | Bioohutus põhjamaises kliimas</title>
+  <meta name="description" content="DSO Nordic on spetsiaalselt põhjamaissesse kliimasse välja töötatud masinate ja sõidukite desinfitseerimisvärav, mis aitab ettevõtetel kontrollida ja ennetada haigustekitajate levikut." />
+  <meta name="keywords" content="desinfitseerimisvärav, bioohutus, farmid, põllumajandus, sigade Aafrika katk, suu- ja sõrataud, põhjamaad, masinate desinfitseerimine" />
+  <meta name="author" content="DSO Nordic" />
+  <meta property="og:title" content="🚛 DSO Nordic - Bioohutus värav põhjamaade kliimas" />
+  <meta property="og:description" content="❄️ Töökindel -20°C kuni +40°C | ⚡ Kiire desinfitseerimine | 🛡️ Kaitse haiguspuhangute eest | 💰 Ennetamine on odavam kui kriisihaldus" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dsonordic.com" />
+  <meta property="og:image" content="https://dsonordic.com/image/IMG_9338.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DSO Nordic vehicle disinfection gate" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="🚛 DSO Nordic - Bioohutus värav põhjamaade kliimas" />
+  <meta name="twitter:description" content="❄️ Töökindel -20°C kuni +40°C | ⚡ Kiire desinfitseerimine | 🛡️ Kaitse haiguspuhangute eest | 💰 Ennetamine on odavam kui kriisihaldus" />
+  <meta name="twitter:image" content="https://dsonordic.com/image/IMG_9338.jpg" />
+  <meta name="twitter:image:alt" content="DSO Nordic vehicle disinfection gate" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #212E36;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(33, 46, 54, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 1rem 0;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      border-bottom: 2px solid #F07228;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #F07228;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #F07228;
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, #F07228 0%, #e05a1a 100%);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(240, 114, 40, 0.3);
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-left: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .lang-switcher {
+        margin-left: 0;
+        margin-top: 1rem;
+        align-self: flex-end;
+      }
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 120px 0 80px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #2a3a44 0%, #212E36 100%);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      color: #F07228;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .secondary-button {
+      background: transparent;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: 2px solid #F07228;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .secondary-button:hover {
+      background: #F07228;
+      color: white;
+    }
+
+    /* Content Sections */
+    .content-section {
+      padding: 80px 0;
+      background: #f5f5f5;
+    }
+
+    .content-section:nth-child(even) {
+      background: #e8e8e8;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #212E36;
+    }
+
+    .section-content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .section-content h2 {
+      color: #F07228;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .section-content h3 {
+      color: #212E36;
+      margin: 2rem 0 1rem 0;
+      font-size: 1.4rem;
+    }
+
+    .section-content p {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-content ul {
+      margin: 1.5rem 0;
+      padding-left: 2rem;
+    }
+
+    .section-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .section-content strong {
+      color: #F07228;
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .benefit-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #F07228;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .benefit-card h4 {
+      color: #F07228;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    /* Technical Table */
+    .tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: white;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .tech-table th,
+    .tech-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    .tech-table th {
+      background: #212E36;
+      color: #F07228;
+      font-weight: 600;
+    }
+
+    .tech-table tr:hover {
+      background: #f8f9fa;
+    }
+
+    /* Process Steps */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .step-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .step-number {
+      background: #212E36;
+      color: #F07228;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin: 0 auto 1rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #212E36 0%, #2a3a44 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .contact-info {
+      max-width: 600px;
+      margin: 2rem auto 0;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 5px;
+      backdrop-filter: blur(10px);
+      border: 1px solid #F07228;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      color: #F07228;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .contact-detail a {
+      color: #F07228;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-detail a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background: #212E36;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 2px solid #F07228;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-content {
+        font-size: 1rem;
+      }
+
+      .benefits-grid,
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .tech-table {
+        font-size: 0.9rem;
+      }
+
+      .tech-table th,
+      .tech-table td {
+        padding: 0.8rem;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 0 15px;
+      }
+
+      .benefit-card,
+      .step-card {
+        padding: 1.5rem;
+      }
+
+      .contact-info {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="#" class="logo">
+        <span data-lang="et">DSO Nordic</span>
+        <span data-lang="fi" style="display:none;">DSO Nordic</span>
+        <span data-lang="sv" style="display:none;">DSO Nordic</span>
+        <span data-lang="en" style="display:none;">DSO Nordic</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#miks-valida">
+          <span data-lang="et">Miks valida?</span>
+          <span data-lang="fi" style="display:none;">Miksi valita?</span>
+          <span data-lang="sv" style="display:none;">Varför välja?</span>
+          <span data-lang="en" style="display:none;">Why choose?</span>
+        </a></li>
+        <li><a href="#probleem">
+          <span data-lang="et">Probleem</span>
+          <span data-lang="fi" style="display:none;">Ongelma</span>
+          <span data-lang="sv" style="display:none;">Problem</span>
+          <span data-lang="en" style="display:none;">Problem</span>
+        </a></li>
+        <li><a href="#toode">
+          <span data-lang="et">Kuidas töötab?</span>
+          <span data-lang="fi" style="display:none;">Miten se toimii?</span>
+          <span data-lang="sv" style="display:none;">Hur fungerar det?</span>
+          <span data-lang="en" style="display:none;">How does it work?</span>
+        </a></li>
+        <li><a href="#tehnika">
+          <span data-lang="et">Tehnilised andmed</span>
+          <span data-lang="fi" style="display:none;">Tekniset tiedot</span>
+          <span data-lang="sv" style="display:none;">Tekniska data</span>
+          <span data-lang="en" style="display:none;">Technical data</span>
+        </a></li>
+        <li><a href="#kontakt">
+          <span data-lang="et">Kontakt</span>
+          <span data-lang="fi" style="display:none;">Yhteystiedot</span>
+          <span data-lang="sv" style="display:none;">Kontakt</span>
+          <span data-lang="en" style="display:none;">Contact</span>
+        </a></li>
+      </ul>
+      <a href="#kontakt" class="cta-button">
+        <span data-lang="et">Küsi pakkumist</span>
+        <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
+        <span data-lang="sv" style="display:none;">Begär offert</span>
+        <span data-lang="en" style="display:none;">Get an offer!</span>
+      </a>
+      <div class="lang-switcher">
+        <button class="lang-flag" data-lang-btn="et" title="Eesti" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇪🇪</button>
+        <button class="lang-flag" data-lang-btn="fi" title="Suomi" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇫🇮</button>
+        <button class="lang-flag" data-lang-btn="sv" title="Svenska" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇸🇪</button>
+        <button class="lang-flag" data-lang-btn="en" title="English" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇬🇧</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>
+        <span data-lang="et">DSO Nordic sõidukite desinfitseerimisvärav</span>
+        <span data-lang="fi" style="display:none;">DSO Nordic ajoneuvojen desinfiointiportti</span>
+        <span data-lang="sv" style="display:none;">DSO Nordic fordonsdesinfektionsport</span>
+        <span data-lang="en" style="display:none;">DSO Nordic vehicle disinfection gate</span>
+      </h1>
+      <p><strong>
+        <span data-lang="et">Bioohutus algab sissepääsust – kaitse oma ettevõtet haiguspuhangute eest.</span>
+        <span data-lang="fi" style="display:none;">Biosuojaus alkaa sisäänkäynnistä – suojaa yrityksesi tautipurkauksilta.</span>
+        <span data-lang="sv" style="display:none;">Biosäkerhet börjar vid ingången – skydda ditt företag mot sjukdomsutbrott.</span>
+        <span data-lang="en" style="display:none;">Bio safety starts at the entrance – protect your business from disease outbreaks.</span>
+      </strong></p>
+      <p>
+        <span data-lang="et">DSO Nordic on spetsiaalselt põhjamaissesse kliimasse disainitud sõidukite desinfitseerimisvärav, mis aitab ettevõtetel ennetada ja vähendada haigustekitajate levikut.</span>
+        <span data-lang="fi" style="display:none;">DSO Nordic on erityisesti pohjoismaiseen ilmastoon suunniteltu ajoneuvojen desinfiointiportti, joka auttaa yrityksiä ehkäisemään ja vähentämään taudinaiheuttajien leviämistä.</span>
+        <span data-lang="sv" style="display:none;">DSO Nordic är en fordonsdesinfektionsport designad för nordiskt klimat, som hjälper företag att förebygga och minska spridningen av smittämnen.</span>
+        <span data-lang="en" style="display:none;">DSO Nordic is a vehicle disinfection gate specially designed for the Nordic climate, helping companies prevent and reduce the spread of pathogens.</span>
+      </p>
+      
+      <!-- Product Image -->
+      <div style="margin: 3rem 0; text-align: center;">
+        <img src="image/IMG_9338.jpg" alt="DSO Nordic desinfitseerimisvärav" style="max-width: 50%; height: auto; border-radius: 10px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); border: 3px solid #F07228;">
+      </div>
+      
+      <div class="hero-buttons">
+        <a href="#kontakt" class="cta-button">
+          <span data-lang="et">Küsi pakkumist</span>
+          <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
+          <span data-lang="sv" style="display:none;">Begär offert</span>
+          <span data-lang="en" style="display:none;">Get an offer!</span>
+        </a>
+        <a href="#miks-valida" class="secondary-button">
+          <span data-lang="et">Loe rohkem</span>
+          <span data-lang="fi" style="display:none;">Lue lisää</span>
+          <span data-lang="sv" style="display:none;">Läs mer</span>
+          <span data-lang="en" style="display:none;">Read more</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section id="miks-valida" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Miks valida DSO Nordic värav?</span>
+        <span data-lang="fi" style="display:none;">Miksi valita DSO Nordic -portti?</span>
+        <span data-lang="sv" style="display:none;">Varför välja DSO Nordic-porten?</span>
+        <span data-lang="en" style="display:none;">Why choose the DSO Nordic gate?</span>
+      </h2>
+      <div class="section-content">
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h4><span data-lang="et">❄️ Töökindel lahendus miinuskraadides</span><span data-lang="fi" style="display:none;">❄️ Toimii pakkasessa</span><span data-lang="sv" style="display:none;">❄️ Driftsäker i minusgrader</span><span data-lang="en" style="display:none;">❄️ Reliable in subzero temperatures</span></h4>
+            <p><span data-lang="et">Vastupidav ilmastikuoludele: lumi, vihm, tuul ja pakane ei mõjuta seadme tööd.</span><span data-lang="fi" style="display:none;">Kestää sääolosuhteet: lumi, sade, tuuli ja pakkanen eivät vaikuta laitteen toimintaan.</span><span data-lang="sv" style="display:none;">Tål väderförhållanden: snö, regn, vind och kyla påverkar inte enheten.</span><span data-lang="en" style="display:none;">Weatherproof: snow, rain, wind, and frost do not affect operation.</span></p>
+          </div>
+          <div class="benefit-card">
+            <h4><span data-lang="et">⚡ Tõhus tööprotsess</span><span data-lang="fi" style="display:none;">⚡ Tehokas prosessi</span><span data-lang="sv" style="display:none;">⚡ Effektiv process</span><span data-lang="en" style="display:none;">⚡ Efficient process</span></h4>
+            <p><span data-lang="et">Lihtne juhtimise süsteem, kiire ja ühtlane desinfitseerimine.</span><span data-lang="fi" style="display:none;">Helppo ohjausjärjestelmä, nopea ja tasainen desinfiointi.</span><span data-lang="sv" style="display:none;">Enkel styrning, snabb och jämn desinfektion.</span><span data-lang="en" style="display:none;">Simple control system, fast and even disinfection.</span></p>
+          </div>
+          <div class="benefit-card">
+            <h4><span data-lang="et">💰 Majanduslik riskide maandamine</span><span data-lang="fi" style="display:none;">💰 Taloudellisten riskien hallinta</span><span data-lang="sv" style="display:none;">💰 Ekonomisk riskhantering</span><span data-lang="en" style="display:none;">💰 Economic risk mitigation</span></h4>
+            <p><span data-lang="et">Farmi või tootmisüksuse nakatumine toob kaasa ulatusliku majandusliku, emotsionaalse ja sotsiaalse kahju. DSO Nordic aitab seda riski ennetada.</span><span data-lang="fi" style="display:none;">Tartunta tilalla tai tuotantolaitoksessa aiheuttaa laajoja taloudellisia, emotionaalisia ja sosiaalisia vahinkoja. DSO Nordic auttaa ehkäisemään tätä riskiä.</span><span data-lang="sv" style="display:none;">Smittan i gården eller produktionsenheten orsakar omfattande ekonomiska, emotionella och sociala skador. DSO Nordic hjälper till att förebygga denna risk.</span><span data-lang="en" style="display:none;">Infection in a farm or production unit causes extensive economic, emotional, and social damage. DSO Nordic helps prevent this risk.</span></p>
+          </div>
+          <div class="benefit-card">
+            <h4><span data-lang="et">🏥 Bioohutus farmidele ja tootmisüksustele</span><span data-lang="fi" style="display:none;">🏥 Biosuojaus tiloille ja tuotantolaitoksille</span><span data-lang="sv" style="display:none;">🏥 Biosäkerhet för gårdar och produktionsenheter</span><span data-lang="en" style="display:none;">🏥 Biosecurity for farms and production units</span></h4>
+            <p><span data-lang="et">Aitab vältida sigade Aafrika katku, suu- ja sõrataudi ning teiste loomahaiguste levikut, mis ohustavad Euroopa farmisektorit.</span><span data-lang="fi" style="display:none;">Auttaa estämään afrikkalaisen sikaruton, suu- ja sorkkataudin sekä muiden eläintautien leviämistä, jotka uhkaavat Euroopan maatilasektoria.</span><span data-lang="sv" style="display:none;">Hjälper till att förhindra spridning av afrikansk svinpest, mul- och klövsjuka och andra djursjukdomar som hotar Europas jordbrukssektor.</span><span data-lang="en" style="display:none;">Helps prevent the spread of African swine fever, foot-and-mouth disease, and other animal diseases threatening the European farm sector.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="probleem" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Millist probleemi see lahendab?</span>
+        <span data-lang="fi" style="display:none;">Mitä ongelmaa tämä ratkaisee?</span>
+        <span data-lang="sv" style="display:none;">Vilka problem löser detta?</span>
+        <span data-lang="en" style="display:none;">What problem does this solve?</span>
+      </h2>
+      <div class="section-content">
+        <h3>
+          <span data-lang="et">Euroopas levivad taas ohtlikud loomataudid, nagu:</span>
+          <span data-lang="fi" style="display:none;">Euroopassa leviävät jälleen vaaralliset eläintaudit, kuten:</span>
+          <span data-lang="sv" style="display:none;">Farliga djursjukdomar sprids åter i Europa, såsom:</span>
+          <span data-lang="en" style="display:none;">Dangerous animal diseases are spreading again in Europe, such as:</span>
+        </h3>
+        <ul>
+          <li><strong><span data-lang="et">Sigade Aafrika katk</span><span data-lang="fi" style="display:none;">Afrikkalainen sikarutto</span><span data-lang="sv" style="display:none;">Afrikansk svinpest</span><span data-lang="en" style="display:none;">African swine fever</span></strong></li>
+          <li><strong><span data-lang="et">Suu- ja sõrataud</span><span data-lang="fi" style="display:none;">Suu- ja sorkkatauti</span><span data-lang="sv" style="display:none;">Mul- och klövsjuka</span><span data-lang="en" style="display:none;">Foot-and-mouth disease</span></strong></li>
+        </ul>
+
+        <h3>
+          <span data-lang="et">Nakatumine põhjustab:</span>
+          <span data-lang="fi" style="display:none;">Tartunta aiheuttaa:</span>
+          <span data-lang="sv" style="display:none;">Smitta orsakar:</span>
+          <span data-lang="en" style="display:none;">Infection causes:</span>
+        </h3>
+        <ul>
+          <li><span data-lang="et">Tootmise seiskumise</span><span data-lang="fi" style="display:none;">Tuotannon pysähtyminen</span><span data-lang="sv" style="display:none;">Produktionsstopp</span><span data-lang="en" style="display:none;">Production halt</span></li>
+          <li><span data-lang="et">Loomade massilise hävitamise</span><span data-lang="fi" style="display:none;">Eläinten massatuhot</span><span data-lang="sv" style="display:none;">Massavlivning av djur</span><span data-lang="en" style="display:none;">Mass destruction of animals</span></li>
+          <li><span data-lang="et">Piirkondliku isolatsiooni</span><span data-lang="fi" style="display:none;">Alueellinen eristys</span><span data-lang="sv" style="display:none;">Regional isolering</span><span data-lang="en" style="display:none;">Regional isolation</span></li>
+          <li><span data-lang="et">Rasked majanduslikud ja sotsiaalsed tagajärjed</span><span data-lang="fi" style="display:none;">Vakavat taloudelliset ja sosiaaliset seuraukset</span><span data-lang="sv" style="display:none;">Allvarliga ekonomiska och sociala konsekvenser</span><span data-lang="en" style="display:none;">Serious economic and social consequences</span></li>
+        </ul>
+
+        <p><strong>
+          <span data-lang="et">DSO Nordic desinfitseerimisvärava kasutamine aitab neid riske minimaliseerida, pihustades sõidukite välispinnale desinfitseerimisvedelikku enne farmi või tootmisüksuse territooriumile sisenemist.</span>
+          <span data-lang="fi" style="display:none;">DSO Nordic -desinfiointiportin käyttö auttaa minimoimaan nämä riskit ruiskuttamalla desinfiointiaineen ajoneuvojen ulkopinnoille ennen tilan tai tuotantolaitoksen alueelle saapumista.</span>
+          <span data-lang="sv" style="display:none;">Användning av DSO Nordic-desinfektionsporten hjälper till att minimera dessa risker genom att spraya desinfektionsmedel på fordonens ytor innan de går in på gårdens eller produktionsenhetens område.</span>
+          <span data-lang="en" style="display:none;">Using the DSO Nordic disinfection gate helps minimize these risks by spraying disinfectant on vehicle surfaces before entering the farm or production unit area.</span>
+        </strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="toode" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Kuidas DSO Nordic töötab?</span>
+        <span data-lang="fi" style="display:none;">Miten DSO Nordic toimii?</span>
+        <span data-lang="sv" style="display:none;">Hur fungerar DSO Nordic?</span>
+        <span data-lang="en" style="display:none;">How does DSO Nordic work?</span>
+      </h2>
+      <div class="section-content">
+        <div class="process-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h4><span data-lang="et">Start-nupp</span><span data-lang="fi" style="display:none;">Käynnistyspainike</span><span data-lang="sv" style="display:none;">Startknapp</span><span data-lang="en" style="display:none;">Start button</span></h4>
+            <p><span data-lang="et">Vajuta <strong>start-nuppu</strong> – aktiveerub pihustussüsteem.</span><span data-lang="fi" style="display:none;">Paina <strong>käynnistyspainiketta</strong> – suihkutusjärjestelmä aktivoituu.</span><span data-lang="sv" style="display:none;">Tryck på <strong>startknappen</strong> – sprutsystemet aktiveras.</span><span data-lang="en" style="display:none;">Press the start button – the spraying system will activate.</span></p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h4><span data-lang="et">Läbimine</span><span data-lang="fi" style="display:none;">Läpikulku</span><span data-lang="sv" style="display:none;">Passage</span><span data-lang="en" style="display:none;">Passage</span></h4>
+            <p><span data-lang="et">Veok sõidab aeglaselt 2,4 km/h läbi DSO Nordic värava.</span><span data-lang="fi" style="display:none;">Ajoneuvo ajaa hitaasti 2,4 km/h DSO Nordic -portin läpi.</span><span data-lang="sv" style="display:none;">Fordonet kör långsamt 2,4 km/h genom DSO Nordic-porten.</span><span data-lang="en" style="display:none;">The vehicle drives slowly through the DSO Nordic gate at 2.4 km/h.</span></p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h4><span data-lang="et">Desinfitseerimine</span><span data-lang="fi" style="display:none;">Desinfiointi</span><span data-lang="sv" style="display:none;">Desinfektion</span><span data-lang="en" style="display:none;">Disinfection</span></h4>
+            <p><span data-lang="et">Desinfitseerimisvedelik kantakse sõidukile <strong>neljast suunast</strong> – ülevalt, alt ja külgedelt. Komplektis on ka käsiprits, millega veoki rattakoopad desinfitseerida.</span><span data-lang="fi" style="display:none;">Desinfiointiaine levitetään ajoneuvoon <strong>neljästä suunnasta</strong> – ylhäältä, alhaalta ja sivuilta. Mukana on myös käsiruisku pyöräkoteloiden desinfiointiin.</span><span data-lang="sv" style="display:none;">Desinfektionsmedlet appliceras på fordonet från <strong>fyra håll</strong> – uppifrån, underifrån och från sidorna. Ett handmunstycke ingår för att desinficera hjulhusen.</span><span data-lang="en" style="display:none;">The disinfectant is sprayed onto the vehicle from four directions – from above, below, and both sides. The set also includes a handheld sprayer for disinfecting the vehicle's wheel arches.</span></p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h4><span data-lang="et">Kiirus</span><span data-lang="fi" style="display:none;">Nopeus</span><span data-lang="sv" style="display:none;">Hastighet</span><span data-lang="en" style="display:none;">Speed</span></h4>
+            <p><span data-lang="et">Protsessi pikkus sõltub sõiduki pikkusest. Traktori + järelkäru desinfitseerimine kestab u 60 sekundit (pihustuskulu 100 L/min).</span><span data-lang="fi" style="display:none;">Prosessin kesto riippuu ajoneuvon pituudesta. Traktorin ja perävaunun desinfiointi kestää noin 60 sekuntia (suihkutus 100 L/min).</span><span data-lang="sv" style="display:none;">Processens längd beror på fordonets längd. Desinfektion av traktor med släp tar ca 60 sekunder (sprutförbrukning 100 L/min).</span><span data-lang="en" style="display:none;">The duration of the process depends on the length of the vehicle. Disinfecting a tractor with a trailer takes approximately 60 seconds (spray consumption 100 L/min).</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Advantages Section -->
+  <section class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Peamised eelised</span>
+        <span data-lang="fi" style="display:none;">Tärkeimmät edut</span>
+        <span data-lang="sv" style="display:none;">Huvudfördelar</span>
+        <span data-lang="en" style="display:none;">Main advantages</span>
+      </h2>
+      <div class="section-content">
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h4><span data-lang="et">❄️ For Nordic Use</span><span data-lang="fi" style="display:none;">Käyttö Pohjoismaissa</span><span data-lang="sv" style="display:none;">För användning i Norden</span><span data-lang="en" style="display:none;">❄️ For Nordic Use</span></h4>
+            <p><span data-lang="et">Töökindel temperatuurivahemikus -20°C kuni +40°C</span><span data-lang="fi" style="display:none;">Toimii luotettavasti lämpötiloissa -20°C – +40°C</span><span data-lang="sv" style="display:none;">Driftsäker i temperaturer från -20°C till +40°C</span><span data-lang="en" style="display:none;">Reliable operation in temperatures from -20°C to +40°C.</span></p>
+          </div>
+          <div class="benefit-card">
+            <h4><span data-lang="et">🔧 Durable Construction</span><span data-lang="fi" style="display:none;">Kestävä rakenne</span><span data-lang="sv" style="display:none;">Hållbar konstruktion</span><span data-lang="en" style="display:none;">🔧 Durable Construction</span></h4>
+            <p><span data-lang="et">Galvaniseeritud ja roostevaba teras</span><span data-lang="fi" style="display:none;">Galvanoitu ja ruostumaton teräs</span><span data-lang="sv" style="display:none;">Galvaniserat och rostfritt stål</span><span data-lang="en" style="display:none;">Galvanized and stainless steel.</span></p>
+          </div>
+          <div class="benefit-card">
+            <h4><span data-lang="et">⚡ Simple and Fast Operation</span><span data-lang="fi" style="display:none;">Helppo ja nopea käyttö</span><span data-lang="sv" style="display:none;">Enkel och snabb användning</span><span data-lang="en" style="display:none;">⚡ Simple and Fast Operation</span></h4>
+            <p><span data-lang="et">Manuaalne nupp, ei vaja keerulist automaatikat</span><span data-lang="fi" style="display:none;">Manuaalinen painike, ei vaadi monimutkaista automaatiota</span><span data-lang="sv" style="display:none;">Manuell knapp, kräver ingen avancerad automation</span><span data-lang="en" style="display:none;">Manual button control – no complex automation required.</span></p>
+          </div>
+          <div class="benefit-card">
+            <h4><span data-lang="et">🛡️ Prevents the Spread of Infectious Diseases</span><span data-lang="fi" style="display:none;">Ehkäisee tartuntatautien leviämistä</span><span data-lang="sv" style="display:none;">Förebygger spridning av infektionssjukdomar</span><span data-lang="en" style="display:none;">🛡️ Prevents the Spread of Infectious Diseases</span></h4>
+            <p><span data-lang="et">Minimizes the risk of farm and production facility shutdowns.</span><span data-lang="fi" style="display:none;">Minimoi maatilojen ja tuotantolaitosten sulkemisriskin</span><span data-lang="sv" style="display:none;">Minimerar risken för att gårdar och produktionsenheter stängs</span><span data-lang="en" style="display:none;">Minimizes the risk of farm and production facility shutdowns.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specifications Section -->
+  <section id="tehnika" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Tehnilised andmed</span>
+        <span data-lang="fi" style="display:none;">Tekniset tiedot</span>
+        <span data-lang="sv" style="display:none;">Tekniska data</span>
+        <span data-lang="en" style="display:none;">Technical data</span>
+      </h2>
+      <div class="section-content">
+        <table class="tech-table">
+          <thead>
+            <tr>
+              <th>
+                <span data-lang="et">Feature</span><span data-lang="fi" style="display:none;">Ominaisuus</span><span data-lang="sv" style="display:none;">Egenskap</span><span data-lang="en" style="display:none;">Feature</span>
+              </th>
+              <th>
+                <span data-lang="et">Value</span><span data-lang="fi" style="display:none;">Arvo</span><span data-lang="sv" style="display:none;">Värde</span><span data-lang="en" style="display:none;">Value</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><span data-lang="et">Sisemõõdud (laius x kõrgus)</span><span data-lang="fi" style="display:none;">Sisämitat (leveys x korkeus)</span><span data-lang="sv" style="display:none;">Invändiga mått (bredd x höjd)</span><span data-lang="en" style="display:none;">Internal dimensions (width x height)</span></strong></td>
+              <td>4,0 m x 4,8 m</td>
+            </tr>
+            <tr>
+              <td><strong><span data-lang="et">Välismõõdud (laius x kõrgus)</span><span data-lang="fi" style="display:none;">Ulkimitat (leveys x korkeus)</span><span data-lang="sv" style="display:none;">Utvändiga mått (bredd x höjd)</span><span data-lang="en" style="display:none;">External dimensions (width x height)</span></strong></td>
+              <td>5,4 m x 5,1 m</td>
+            </tr>
+            <tr>
+              <td><strong><span data-lang="et">Materjal</span><span data-lang="fi" style="display:none;">Materiaali</span><span data-lang="sv" style="display:none;">Material</span><span data-lang="en" style="display:none;">Material</span></strong></td>
+              <td><span data-lang="et">Galvaniseeritud ja roostevaba teras</span><span data-lang="fi" style="display:none;">Galvanoitu ja ruostumaton teräs</span><span data-lang="sv" style="display:none;">Galvaniserat och rostfritt stål</span><span data-lang="en" style="display:none;">Galvanized and stainless steel</span></td>
+            </tr>
+            <tr>
+              <td><strong><span data-lang="et">Mahuti</span><span data-lang="fi" style="display:none;">Säiliö</span><span data-lang="sv" style="display:none;">Tank</span><span data-lang="en" style="display:none;">Tank</span></strong></td>
+              <td><span data-lang="et">1000 L IBC konteiner (PE)</span><span data-lang="fi" style="display:none;">1000 L IBC-säiliö (PE)</span><span data-lang="sv" style="display:none;">1000 L IBC-behållare (PE)</span><span data-lang="en" style="display:none;">1000 L IBC container (PE)</span></td>
+            </tr>
+            <tr>
+              <td><strong><span data-lang="et">Elektritoide</span><span data-lang="fi" style="display:none;">Sähkösyöttö</span><span data-lang="sv" style="display:none;">Strömförsörjning</span><span data-lang="en" style="display:none;">Power Supply</span></strong></td>
+              <td>380V / IP66</td>
+            </tr>
+            <tr>
+              <td><strong><span data-lang="et">Pihustussurve</span><span data-lang="fi" style="display:none;">Suihkutuspaine</span><span data-lang="sv" style="display:none;">Spruttryck</span><span data-lang="en" style="display:none;">Spraying Pressure</span></strong></td>
+              <td>~4 bar</td>
+            </tr>
+            <tr>
+              <td><strong><span data-lang="et">Pihustuskulu</span><span data-lang="fi" style="display:none;">Suihkutuskulutus</span><span data-lang="sv" style="display:none;">Sprutförbrukning</span><span data-lang="en" style="display:none;">Spray Consumption</span></strong></td>
+              <td>100 L/min</td>
+            </tr>
+            <tr>
+              <td><strong><span data-lang="et">Töötemperatuur</span><span data-lang="fi" style="display:none;">Käyttölämpötila</span><span data-lang="sv" style="display:none;">Arbetstemperatur</span><span data-lang="en" style="display:none;">Operating Temperature</span></strong></td>
+              <td>-20°C kuni +40°C</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>
+          <span data-lang="et">Lisavarustus</span><span data-lang="fi" style="display:none;">Lisävarusteet</span><span data-lang="sv" style="display:none;">Extrautrustning</span><span data-lang="en" style="display:none;">Extras</span>
+        </h3>
+        <ul>
+          <li><span data-lang="et">Tuulekardinad</span><span data-lang="fi" style="display:none;">Tuuliverhot</span><span data-lang="sv" style="display:none;">Vindgardiner</span><span data-lang="en" style="display:none;">Wind curtains</span></li>
+          <li><span data-lang="et">Kaugjuhtimispult või liikumisandur</span><span data-lang="fi" style="display:none;">Kaukosäädin tai liiketunnistin</span><span data-lang="sv" style="display:none;">Fjärrkontroll eller rörelsesensor</span><span data-lang="en" style="display:none;">Remote control or motion sensor</span></li>
+          <li><span data-lang="et">Soojustatud mahutimaja</span><span data-lang="fi" style="display:none;">Eristetty säiliötalo</span><span data-lang="sv" style="display:none;">Isolerat tankhus</span><span data-lang="en" style="display:none;">Insulated tank housing</span></li>
+          <li><span data-lang="et">Betoonraskused</span><span data-lang="fi" style="display:none;">Betonipainot</span><span data-lang="sv" style="display:none;">Betongvikter</span><span data-lang="en" style="display:none;">Concrete weights</span></li>
+          <li><span data-lang="et">Ohutuspiirded</span><span data-lang="fi" style="display:none;">Turva-aidat</span><span data-lang="sv" style="display:none;">Säkerhetsbarriärer</span><span data-lang="en" style="display:none;">Safety barriers</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="kontakt" class="contact">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">
+        <span data-lang="et">Kontakt</span>
+        <span data-lang="fi" style="display:none;">Yhteystiedot</span>
+        <span data-lang="sv" style="display:none;">Kontakt</span>
+        <span data-lang="en" style="display:none;">Contact</span>
+      </h2>
+      <p><strong>
+        <span data-lang="et">Kaitse oma tootmist – ennetamine on odavam kui kriisihaldus.</span>
+        <span data-lang="fi" style="display:none;">Suojaa tuotantosi – ennaltaehkäisy on halvempaa kuin kriisinhallinta.</span>
+        <span data-lang="sv" style="display:none;">Skydda din produktion – förebyggande är billigare än krishantering.</span>
+        <span data-lang="en" style="display:none;">Keep your business running – don’t let outbreaks call the shots.</span>
+      </strong></p>
+      <p>
+        <span data-lang="et">Võta meiega ühendust ja küsi personaalset pakkumist:</span>
+        <span data-lang="fi" style="display:none;">Ota meihin yhteyttä ja pyydä henkilökohtainen tarjous:</span>
+        <span data-lang="sv" style="display:none;">Kontakta oss för ett personligt erbjudande:</span>
+        <span data-lang="en" style="display:none;">Contact us for a personalized offer:</span>
+      </p>
+      
+      <div class="contact-info">
+        <a href="mailto:info@brek.ee" class="cta-button">
+          <span data-lang="et">Küsi pakkumist</span>
+          <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
+          <span data-lang="sv" style="display:none;">Begär offert</span>
+          <span data-lang="en" style="display:none;">Get an offer!</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <p>
+            <span data-lang="et">&copy; 2025 DSO Nordic. Kõik õigused kaitstud.</span>
+            <span data-lang="fi" style="display:none;">&copy; 2025 DSO Nordic. Kaikki oikeudet pidätetään.</span>
+            <span data-lang="sv" style="display:none;">&copy; 2025 DSO Nordic. Alla rättigheter förbehållna.</span>
+            <span data-lang="en" style="display:none;">&copy; 2025 DSO Nordic. All rights reserved.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(33, 46, 54, 0.98)';
+      } else {
+        navbar.style.background = 'rgba(33, 46, 54, 0.95)';
+      }
+    });
+
+    // Multilingual support
+    function setLanguage(lang) {
+      document.querySelectorAll('span[data-lang]').forEach(function(el) {
+        if (el.getAttribute('data-lang') === lang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+      localStorage.setItem('dso-lang', lang);
+    }
+
+    document.querySelectorAll('.lang-flag').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        setLanguage(this.getAttribute('data-lang-btn'));
+      });
+    });
+
+    // On page load, set language from localStorage or default to 'et'
+    (function() {
+      var lang = localStorage.getItem('dso-lang') || 'et';
+      setLanguage(lang);
+    })();
+  </script>
+</body>
+</html>
