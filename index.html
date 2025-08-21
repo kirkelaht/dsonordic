@@ -2,6 +2,7 @@
 <html lang="et">
 <head>
   <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="CSDTTV1zRGAg4oEYL_IshjtBZxT1-hyAFgpx-7O7FR8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DSO Nordic - Masinate ja sõidukite desinfitseerimisvärav | Bioohutus põhjamaises kliimas</title>
   <meta name="description" content="DSO Nordic on spetsiaalselt põhjamaissesse kliimasse välja töötatud masinate ja sõidukite desinfitseerimisvärav, mis aitab ettevõtetel kontrollida ja ennetada haigustekitajate levikut." />
@@ -539,10 +540,18 @@
         <span data-lang="en" style="display:none;">Get an offer!</span>
       </a>
       <div class="lang-switcher">
-        <button class="lang-flag" data-lang-btn="et" title="Eesti" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇪🇪</button>
-        <button class="lang-flag" data-lang-btn="fi" title="Suomi" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇫🇮</button>
-        <button class="lang-flag" data-lang-btn="sv" title="Svenska" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇸🇪</button>
-        <button class="lang-flag" data-lang-btn="en" title="English" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">🇬🇧</button>
+        <button class="lang-flag" data-lang-btn="et" title="Eesti" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="image/eestilipp.png" alt="Eesti lipp" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        </button>
+        <button class="lang-flag" data-lang-btn="fi" title="Suomi" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="image/soomelipp.png" alt="Suomen lippu" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        </button>
+        <button class="lang-flag" data-lang-btn="sv" title="Svenska" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="image/rootsilipp.png" alt="Svenska flaggan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        </button>
+        <button class="lang-flag" data-lang-btn="en" title="English" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="image/uklipp.png" alt="UK flag" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        </button>
       </div>
     </div>
   </nav>
@@ -829,7 +838,7 @@
       </p>
       
       <div class="contact-info">
-        <form action="https://formspree.io/f/mldldqnv" method="POST" class="contact-form" id="contactForm">
+        <form action="https://formspree.io/f/mldldqnv" method="POST" class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
           <div class="form-group">
             <input type="text" name="name" required placeholder="Nimi / Name" class="form-input">
           </div>
@@ -849,6 +858,22 @@
             <span data-lang="en" style="display:none;">Send message</span>
           </button>
         </form>
+        
+        <!-- Backup contact method -->
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+          <p style="margin-bottom: 1rem;">
+            <span data-lang="et">Või saada otse e-mailile:</span>
+            <span data-lang="fi" style="display:none;">Tai lähetä suoraan sähköpostiin:</span>
+            <span data-lang="sv" style="display:none;">Eller skicka direkt till e-post:</span>
+            <span data-lang="en" style="display:none;">Or send directly to email:</span>
+          </p>
+          <a href="mailto:info@brek.ee" class="cta-button" style="display: inline-block;">
+            <span data-lang="et">info@brek.ee</span>
+            <span data-lang="fi" style="display:none;">info@brek.ee</span>
+            <span data-lang="sv" style="display:none;">info@brek.ee</span>
+            <span data-lang="en" style="display:none;">info@brek.ee</span>
+        </a>
+        </div>
       </div>
     </div>
   </section>
@@ -870,7 +895,39 @@
   </footer>
 
   <script>
-
+    // Handle form submission with debugging
+    function handleFormSubmit(event) {
+      console.log('Form submitted!');
+      
+      // Show loading message
+      const currentLang = localStorage.getItem('dso-lang') || 'et';
+      let message = 'Sending message...';
+      
+      if (currentLang === 'et') message = 'Sõnumi saatmine...';
+      else if (currentLang === 'fi') message = 'Viestin lähetys...';
+      else if (currentLang === 'sv') message = 'Skickar meddelande...';
+      
+      const notification = document.createElement('div');
+      notification.textContent = message;
+      notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #F07228;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        z-index: 1000;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      `;
+      document.body.appendChild(notification);
+      
+      // Remove notification after 3 seconds
+      setTimeout(() => {
+        notification.remove();
+      }, 3000);
+    }
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
