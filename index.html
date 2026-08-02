@@ -395,6 +395,53 @@
       margin: 0;
     }
 
+    /* FAQ */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      border-left: 4px solid #F07228;
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 1.15rem 1.35rem;
+      font-weight: 600;
+      color: #212E36;
+      font-size: 1.05rem;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '+';
+      float: right;
+      color: #F07228;
+      font-weight: 700;
+    }
+
+    .faq-item[open] summary::after {
+      content: '−';
+    }
+
+    .faq-item p {
+      padding: 0 1.35rem 1.25rem;
+      margin: 0;
+      color: #444;
+      line-height: 1.65;
+    }
+
     /* Contact Section */
     .contact {
       padding: 80px 0;
@@ -535,6 +582,12 @@
           <span data-lang="fi" style="display:none;">Tekniikka</span>
           <span data-lang="sv" style="display:none;">Teknik</span>
           <span data-lang="en" style="display:none;">Specs</span>
+        </a></li>
+        <li><a href="#kkk">
+          <span data-lang="et">KKK</span>
+          <span data-lang="fi" style="display:none;">UKK</span>
+          <span data-lang="sv" style="display:none;">FAQ</span>
+          <span data-lang="en" style="display:none;">FAQ</span>
         </a></li>
         <li><a href="#paigaldused">
           <span data-lang="et">Paigaldused</span>
@@ -1148,6 +1201,124 @@
             <span data-lang="en" style="display:none;">Workplace noise level ≤ 70 dB(A)</span>
           </li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="kkk" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Korduma kippuvad küsimused</span>
+        <span data-lang="fi" style="display:none;">Usein kysytyt kysymykset</span>
+        <span data-lang="sv" style="display:none;">Vanliga frågor</span>
+        <span data-lang="en" style="display:none;">Frequently asked questions</span>
+      </h2>
+      <p class="section-lead">
+        <span data-lang="et">Lühikesed vastused peamistele müügieelsetele küsimustele.</span>
+        <span data-lang="fi" style="display:none;">Lyhyet vastaukset keskeisiin myyntiä edeltäviin kysymyksiin.</span>
+        <span data-lang="sv" style="display:none;">Korta svar på de vanligaste frågorna inför köp.</span>
+        <span data-lang="en" style="display:none;">Short answers to the main pre-sale questions.</span>
+      </p>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>
+            <span data-lang="et">Kas DSO Nordic töötab automaatselt?</span>
+            <span data-lang="fi" style="display:none;">Toimiiko DSO Nordic automaattisesti?</span>
+            <span data-lang="sv" style="display:none;">Fungerar DSO Nordic automatiskt?</span>
+            <span data-lang="en" style="display:none;">Does DSO Nordic work automatically?</span>
+          </summary>
+          <p>
+            <span data-lang="et">Jah. Konfiguratsioonist olenevalt saab tsükli käivitada automaatselt anduritega või kaugjuhtimispuldiga.</span>
+            <span data-lang="fi" style="display:none;">Kyllä. Kokoonpanosta riippuen sykli voidaan käynnistää automaattisesti antureilla tai kaukosäätimellä.</span>
+            <span data-lang="sv" style="display:none;">Ja. Beroende på konfiguration kan cykeln aktiveras automatiskt med sensorer eller via fjärrkontroll.</span>
+            <span data-lang="en" style="display:none;">Yes. Depending on configuration, the cycle can be activated automatically using sensors or by remote control.</span>
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span data-lang="et">Millist elektritoidet on vaja?</span>
+            <span data-lang="fi" style="display:none;">Mitä sähkösyöttöä tarvitaan?</span>
+            <span data-lang="sv" style="display:none;">Vilken strömanslutning krävs?</span>
+            <span data-lang="en" style="display:none;">What power connection is required?</span>
+          </summary>
+          <p>
+            <span data-lang="et">CEE 16A kolmefaasiline toide.</span>
+            <span data-lang="fi" style="display:none;">CEE 16A kolmivaiheinen sähkönsyöttö.</span>
+            <span data-lang="sv" style="display:none;">CEE 16A trefasig strömförsörjning.</span>
+            <span data-lang="en" style="display:none;">CEE 16A three-phase power supply.</span>
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span data-lang="et">Kui palju ruumi on vaja?</span>
+            <span data-lang="fi" style="display:none;">Kuinka paljon tilaa tarvitaan?</span>
+            <span data-lang="sv" style="display:none;">Hur mycket utrymme krävs?</span>
+            <span data-lang="en" style="display:none;">How much space is required?</span>
+          </summary>
+          <p>
+            <span data-lang="et">Paigaldusala peab olema vähemalt 7 × 3 meetrit.</span>
+            <span data-lang="fi" style="display:none;">Asennusalueen on oltava vähintään 7 × 3 metriä.</span>
+            <span data-lang="sv" style="display:none;">Installationsytan måste vara minst 7 × 3 meter.</span>
+            <span data-lang="en" style="display:none;">The installation area must be at least 7 × 3 metres.</span>
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span data-lang="et">Milline on maksimaalne sõiduki kõrgus?</span>
+            <span data-lang="fi" style="display:none;">Mikä on ajoneuvon enimmäiskorkeus?</span>
+            <span data-lang="sv" style="display:none;">Vad är maximal fordonshöjd?</span>
+            <span data-lang="en" style="display:none;">What is the maximum vehicle height?</span>
+          </summary>
+          <p>
+            <span data-lang="et">4 meetrit.</span>
+            <span data-lang="fi" style="display:none;">4 metriä.</span>
+            <span data-lang="sv" style="display:none;">4 meter.</span>
+            <span data-lang="en" style="display:none;">4 metres.</span>
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span data-lang="et">Kas DSO Nordic’ut saab paigaldada olemasolevale farmi sissepääsule?</span>
+            <span data-lang="fi" style="display:none;">Voiko DSO Nordicin asentaa olemassa olevalle tilan sisäänkäynnille?</span>
+            <span data-lang="sv" style="display:none;">Kan DSO Nordic installeras vid en befintlig gårdsinfart?</span>
+            <span data-lang="en" style="display:none;">Can DSO Nordic be installed on an existing farm entrance?</span>
+          </summary>
+          <p>
+            <span data-lang="et">Jah, kui paigalduspind ja vajalik ruum vastavad paigaldusnõuetele.</span>
+            <span data-lang="fi" style="display:none;">Kyllä, jos asennusalusta ja tarvittava tila täyttävät asennusvaatimukset.</span>
+            <span data-lang="sv" style="display:none;">Ja, förutsatt att underlaget och utrymmet uppfyller installationskraven.</span>
+            <span data-lang="en" style="display:none;">Yes, provided the installation surface and required space meet the installation requirements.</span>
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span data-lang="et">Kui tihti tuleb süsteemi kontrollida?</span>
+            <span data-lang="fi" style="display:none;">Kuinka usein järjestelmä on tarkastettava?</span>
+            <span data-lang="sv" style="display:none;">Hur ofta behöver systemet inspektion?</span>
+            <span data-lang="en" style="display:none;">How often does the system require inspection?</span>
+          </summary>
+          <p>
+            <span data-lang="et">Dokumenteeritud kontroll on nõutav vähemalt kord aastas.</span>
+            <span data-lang="fi" style="display:none;">Dokumentoitu tarkastus vaaditaan vähintään kerran vuodessa.</span>
+            <span data-lang="sv" style="display:none;">Dokumenterad inspektion krävs minst en gång per år.</span>
+            <span data-lang="en" style="display:none;">A documented inspection is required at least annually.</span>
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span data-lang="et">Kas süsteem vastab EL masinanõuetele?</span>
+            <span data-lang="fi" style="display:none;">Täytääkö järjestelmä EU:n konevaatimukset?</span>
+            <span data-lang="sv" style="display:none;">Uppfyller systemet EU:s maskinkrav?</span>
+            <span data-lang="en" style="display:none;">Does the system comply with EU machinery requirements?</span>
+          </summary>
+          <p>
+            <span data-lang="et">Jah. DSO Nordic’ul on EÜ vastavusdeklaratsioon, mis katab kohalduvad masina- ja EMC-nõuded.</span>
+            <span data-lang="fi" style="display:none;">Kyllä. DSO Nordicilla on EY-vaatimustenmukaisuusvakuutus, joka kattaa soveltuvat kone- ja EMC-vaatimukset.</span>
+            <span data-lang="sv" style="display:none;">Ja. DSO Nordic har en EG-försäkran om överensstämmelse som täcker tillämpliga maskin- och EMC-krav.</span>
+            <span data-lang="en" style="display:none;">Yes. DSO Nordic has an EU Declaration of Conformity covering the applicable machinery and EMC requirements.</span>
+          </p>
+        </details>
       </div>
     </div>
   </section>
