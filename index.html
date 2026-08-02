@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="CSDTTV1zRGAg4oEYL_IshjtBZxT1-hyAFgpx-7O7FR8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSO Nordic - Sõidukite desinfitseerimisvärav | Bioohutus põhjamaises kliimas</title>
+  <meta name="description" content="DSO Nordic on FerWorks OÜ toodetud automaatne sõidukite desinfitseerimisvärav farmidele. Töökindel põhjamaisetes tingimustes, valmistatud Eestis." />
+  <meta name="keywords" content="desinfitseerimisvärav, bioohutus, farmid, põllumajandus, sigade Aafrika katk, suu- ja sõrataud, põhjamaad, masinate desinfitseerimine, FerWorks" />
+  <meta name="author" content="FerWorks OÜ / DSO Nordic" />
+  <meta property="og:title" content="DSO Nordic - Sõidukite desinfitseerimisvärav põhjamaisesse kliimasse" />
+  <meta property="og:description" content="Automaatne sõidukite desinfitseerimine farmidele. Töökindel -20°C kuni +40°C. Tootja FerWorks OÜ, Eesti." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dsonordic.vercel.app" />
+  <meta property="og:image" content="https://dsonordic.vercel.app/Image/IMG_9338.JPG" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DSO Nordic vehicle disinfection gate" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DSO Nordic - Sõidukite desinfitseerimisvärav" />
+  <meta name="twitter:description" content="Automaatne sõidukite desinfitseerimine farmidele. Töökindel -20°C kuni +40°C. Tootja FerWorks OÜ, Eesti." />
+  <meta name="twitter:image" content="https://dsonordic.vercel.app/Image/IMG_9338.JPG" />
+  <meta name="twitter:image:alt" content="DSO Nordic vehicle disinfection gate" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #212E36;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(33, 46, 54, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 1rem 0;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      border-bottom: 2px solid #F07228;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #F07228;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #F07228;
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, #F07228 0%, #e05a1a 100%);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(240, 114, 40, 0.3);
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-left: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .lang-switcher {
+        margin-left: 0;
+        margin-top: 1rem;
+        align-self: flex-end;
+      }
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 120px 0 80px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #2a3a44 0%, #212E36 100%);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      color: #F07228;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 1.25rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-meta {
+      font-size: 1rem !important;
+      opacity: 0.75 !important;
+      margin-bottom: 2rem !important;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .secondary-button {
+      background: transparent;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: 2px solid #F07228;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .secondary-button:hover {
+      background: #F07228;
+      color: white;
+    }
+
+    /* Content Sections */
+    .content-section {
+      padding: 80px 0;
+      background: #f5f5f5;
+    }
+
+    .content-section:nth-child(even) {
+      background: #e8e8e8;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #212E36;
+    }
+
+    .section-lead {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3rem;
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .section-content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .section-content.wide {
+      max-width: 1000px;
+    }
+
+    .section-content h3 {
+      color: #212E36;
+      margin: 2rem 0 1rem 0;
+      font-size: 1.4rem;
+    }
+
+    .section-content p {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-content ul {
+      margin: 1.5rem 0;
+      padding-left: 2rem;
+    }
+
+    .section-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .section-content strong {
+      color: #F07228;
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 0;
+    }
+
+    .benefit-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #F07228;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .benefit-card h4 {
+      color: #F07228;
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+
+    .benefit-card p {
+      color: #444;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Technical Table */
+    .tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: white;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .tech-table th,
+    .tech-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    .tech-table th {
+      background: #212E36;
+      color: #F07228;
+      font-weight: 600;
+    }
+
+    .tech-table tr:hover {
+      background: #f8f9fa;
+    }
+
+    /* Process Steps */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin: 0;
+    }
+
+    .step-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .step-card h4 {
+      color: #F07228;
+      margin-bottom: 0.75rem;
+    }
+
+    .step-card p {
+      margin: 0;
+      color: #444;
+      font-size: 0.98rem;
+    }
+
+    .step-number {
+      background: #212E36;
+      color: #F07228;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin: 0 auto 1rem;
+    }
+
+    /* Installations */
+    .install-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .install-card {
+      background: white;
+      padding: 1.75rem 2rem;
+      border-radius: 5px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      border-top: 3px solid #F07228;
+    }
+
+    .install-card h4 {
+      color: #212E36;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .install-card p {
+      margin: 0;
+      color: #555;
+    }
+
+    .compliance-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .compliance-list li {
+      background: white;
+      padding: 1rem 1.25rem;
+      border-radius: 5px;
+      border-left: 4px solid #F07228;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      margin: 0;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #212E36 0%, #2a3a44 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-lead {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .contact-info {
+      max-width: 600px;
+      margin: 2rem auto 0;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 5px;
+      backdrop-filter: blur(10px);
+      border: 1px solid #F07228;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #F07228;
+      background: white;
+      box-shadow: 0 0 0 3px rgba(240, 114, 40, 0.1);
+    }
+
+    .form-input::placeholder {
+      color: #666;
+    }
+
+    textarea.form-input {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    /* Footer */
+    .footer {
+      background: #212E36;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 2px solid #F07228;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer a {
+      color: #F07228;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-content {
+        font-size: 1rem;
+      }
+
+      .benefits-grid,
+      .process-steps,
+      .install-list {
+        grid-template-columns: 1fr;
+      }
+
+      .tech-table {
+        font-size: 0.9rem;
+      }
+
+      .tech-table th,
+      .tech-table td {
+        padding: 0.8rem;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 0 15px;
+      }
+
+      .benefit-card,
+      .step-card,
+      .install-card {
+        padding: 1.5rem;
+      }
+
+      .contact-info {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="#" class="logo">DSO Nordic</a>
+      <ul class="nav-links">
+        <li><a href="#eelised">
+          <span data-lang="et">Eelised</span>
+          <span data-lang="fi" style="display:none;">Edut</span>
+          <span data-lang="sv" style="display:none;">Fördelar</span>
+          <span data-lang="en" style="display:none;">Benefits</span>
+        </a></li>
+        <li><a href="#toode">
+          <span data-lang="et">Kuidas töötab</span>
+          <span data-lang="fi" style="display:none;">Toiminta</span>
+          <span data-lang="sv" style="display:none;">Funktion</span>
+          <span data-lang="en" style="display:none;">How it works</span>
+        </a></li>
+        <li><a href="#tehnika">
+          <span data-lang="et">Tehnika</span>
+          <span data-lang="fi" style="display:none;">Tekniikka</span>
+          <span data-lang="sv" style="display:none;">Teknik</span>
+          <span data-lang="en" style="display:none;">Specs</span>
+        </a></li>
+        <li><a href="#paigaldused">
+          <span data-lang="et">Paigaldused</span>
+          <span data-lang="fi" style="display:none;">Asennukset</span>
+          <span data-lang="sv" style="display:none;">Installationer</span>
+          <span data-lang="en" style="display:none;">Installations</span>
+        </a></li>
+        <li><a href="#kontakt">
+          <span data-lang="et">Kontakt</span>
+          <span data-lang="fi" style="display:none;">Yhteystiedot</span>
+          <span data-lang="sv" style="display:none;">Kontakt</span>
+          <span data-lang="en" style="display:none;">Contact</span>
+        </a></li>
+      </ul>
+      <a href="#kontakt" class="cta-button">
+        <span data-lang="et">Küsi pakkumist</span>
+        <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
+        <span data-lang="sv" style="display:none;">Begär offert</span>
+        <span data-lang="en" style="display:none;">Request a quote</span>
+      </a>
+      <div class="lang-switcher">
+        <button class="lang-flag" data-lang-btn="et" title="Eesti" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="Image/eestilipp.png" alt="Eesti lipp" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        </button>
+        <button class="lang-flag" data-lang-btn="fi" title="Suomi" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="Image/soomelipp.png" alt="Suomen lippu" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        </button>
+        <button class="lang-flag" data-lang-btn="sv" title="Svenska" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="Image/rootsilipp.png" alt="Svenska flaggan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        </button>
+        <button class="lang-flag" data-lang-btn="en" title="English" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="Image/uklipp.png" alt="UK flag" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>
+        <span data-lang="et">DSO Nordic sõidukite desinfitseerimisvärav</span>
+        <span data-lang="fi" style="display:none;">DSO Nordic ajoneuvojen desinfiointiportti</span>
+        <span data-lang="sv" style="display:none;">DSO Nordic fordonsdesinfektionsport</span>
+        <span data-lang="en" style="display:none;">DSO Nordic vehicle disinfection gate</span>
+      </h1>
+      <p><strong>
+        <span data-lang="et">Vähenda haigustekitajate farmi toomise riski sõidukite kaudu.</span>
+        <span data-lang="fi" style="display:none;">Vähennä taudinaiheuttajien riskiä ajoneuvojen kautta tilalle.</span>
+        <span data-lang="sv" style="display:none;">Minska risken att smittämnen förs in till gården via fordon.</span>
+        <span data-lang="en" style="display:none;">Reduce the risk of pathogens entering the farm with vehicles.</span>
+      </strong></p>
+      <p>
+        <span data-lang="et">Automaatne desinfitseerimissüsteem professionaalsetele farmidele. Disainitud põhjamaisesse kliimasse. Tootja FerWorks OÜ, Eesti.</span>
+        <span data-lang="fi" style="display:none;">Automaattinen desinfiointijärjestelmä ammattitiloille. Suunniteltu pohjoismaiseen ilmastoon. Valmistaja FerWorks OÜ, Viro.</span>
+        <span data-lang="sv" style="display:none;">Automatiskt desinfektionssystem för professionella gårdar. Designat för nordiskt klimat. Tillverkare FerWorks OÜ, Estland.</span>
+        <span data-lang="en" style="display:none;">Automated disinfection system for professional farms. Designed for Nordic climate conditions. Manufactured in Estonia by FerWorks OÜ.</span>
+      </p>
+      <p class="hero-meta">
+        <span data-lang="et">Töötemperatuur −20 °C kuni +40 °C · Galvaniseeritud ja roostevaba teras</span>
+        <span data-lang="fi" style="display:none;">Käyttölämpötila −20 °C – +40 °C · Galvanoitu ja ruostumaton teräs</span>
+        <span data-lang="sv" style="display:none;">Arbetstemperatur −20 °C till +40 °C · Galvaniserat och rostfritt stål</span>
+        <span data-lang="en" style="display:none;">Operating temperature −20 °C to +40 °C · Galvanized and stainless steel</span>
+      </p>
+
+      <div style="margin: 2.5rem 0; text-align: center;">
+        <img src="Image/IMG_9338.JPG" alt="DSO Nordic desinfitseerimisvärav" style="max-width: 50%; height: auto; border-radius: 10px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); border: 3px solid #F07228;">
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#kontakt" class="cta-button">
+          <span data-lang="et">Küsi pakkumist</span>
+          <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
+          <span data-lang="sv" style="display:none;">Begär offert</span>
+          <span data-lang="en" style="display:none;">Request a quote</span>
+        </a>
+        <a href="#tehnika" class="secondary-button">
+          <span data-lang="et">Tehnilised andmed</span>
+          <span data-lang="fi" style="display:none;">Tekniset tiedot</span>
+          <span data-lang="sv" style="display:none;">Tekniska data</span>
+          <span data-lang="en" style="display:none;">Technical data</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key benefits -->
+  <section id="eelised" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Miks DSO Nordic</span>
+        <span data-lang="fi" style="display:none;">Miksi DSO Nordic</span>
+        <span data-lang="sv" style="display:none;">Varför DSO Nordic</span>
+        <span data-lang="en" style="display:none;">Why DSO Nordic</span>
+      </h2>
+      <p class="section-lead">
+        <span data-lang="et">Tööstuslik lahendus farmi bioohutusele — mitte lihtsalt metallraam sissepääsul.</span>
+        <span data-lang="fi" style="display:none;">Teollinen ratkaisu tilan biosuojaukseen — ei vain metallikehys sisäänkäynnillä.</span>
+        <span data-lang="sv" style="display:none;">En industriell lösning för gårdens biosäkerhet — inte bara en metallram vid infarten.</span>
+        <span data-lang="en" style="display:none;">An industrial solution for farm biosecurity — not just a metal frame at the entrance.</span>
+      </p>
+      <div class="section-content wide">
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Vähem riski sõidukite kaudu</span>
+              <span data-lang="fi" style="display:none;">Vähemmän riskiä ajoneuvojen kautta</span>
+              <span data-lang="sv" style="display:none;">Lägre risk via fordon</span>
+              <span data-lang="en" style="display:none;">Lower vehicle-borne risk</span>
+            </h4>
+            <p>
+              <span data-lang="et">Desinfitseerib sõiduki välispindu enne farmi territooriumile sisenemist.</span>
+              <span data-lang="fi" style="display:none;">Desinfioi ajoneuvon ulkopinnat ennen tilan alueelle saapumista.</span>
+              <span data-lang="sv" style="display:none;">Desinficerar fordonets yttre ytor innan infart till gårdens område.</span>
+              <span data-lang="en" style="display:none;">Disinfects vehicle exterior surfaces before entering the farm site.</span>
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Töökindlus põhjamaisetes tingimustes</span>
+              <span data-lang="fi" style="display:none;">Luotettava pohjoismaisissa oloissa</span>
+              <span data-lang="sv" style="display:none;">Driftsäker i nordiska förhållanden</span>
+              <span data-lang="en" style="display:none;">Reliable in Nordic conditions</span>
+            </h4>
+            <p>
+              <span data-lang="et">Töötemperatuur −20 °C kuni +40 °C. Arvestab lume, vihma, tuule ja pakasega.</span>
+              <span data-lang="fi" style="display:none;">Käyttölämpötila −20 °C – +40 °C. Kestää lumen, sateen, tuulen ja pakkasen.</span>
+              <span data-lang="sv" style="display:none;">Arbetstemperatur −20 °C till +40 °C. Tål snö, regn, vind och kyla.</span>
+              <span data-lang="en" style="display:none;">Operating range −20 °C to +40 °C. Built for snow, rain, wind and frost.</span>
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Tootmise järjepidevus</span>
+              <span data-lang="fi" style="display:none;">Tuotannon jatkuvuus</span>
+              <span data-lang="sv" style="display:none;">Driftkontinuitet</span>
+              <span data-lang="en" style="display:none;">Operational continuity</span>
+            </h4>
+            <p>
+              <span data-lang="et">Aitab vähendada haiguspuhangust tingitud seiskumise ja sulgemise riski.</span>
+              <span data-lang="fi" style="display:none;">Auttaa vähentämään tautipurkauksen aiheuttamaa seisokki- ja sulkemisriskiä.</span>
+              <span data-lang="sv" style="display:none;">Hjälper till att minska risken för driftstopp och stängning vid sjukdomsutbrott.</span>
+              <span data-lang="en" style="display:none;">Helps reduce the risk of shutdowns caused by disease outbreaks.</span>
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Automaatika ja kontroll</span>
+              <span data-lang="fi" style="display:none;">Automatiikka ja hallinta</span>
+              <span data-lang="sv" style="display:none;">Automation och kontroll</span>
+              <span data-lang="en" style="display:none;">Automation and control</span>
+            </h4>
+            <p>
+              <span data-lang="et">Käivitus fotosilma või kaugjuhtimispuldiga. Helisignaal ja kollane vilkur hoiatavad tsükli ajal.</span>
+              <span data-lang="fi" style="display:none;">Käynnistys valokennolla tai kaukosäätimellä. Äänimerkki ja keltainen vilkku varoittavat syklin aikana.</span>
+              <span data-lang="sv" style="display:none;">Start via fotocell eller fjärrkontroll. Ljudsignal och gul blinkning varnar under cykeln.</span>
+              <span data-lang="en" style="display:none;">Activated by photo sensor or remote control. Sound signal and yellow beacon warn during the cycle.</span>
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Vastupidav konstruktsioon</span>
+              <span data-lang="fi" style="display:none;">Kestävä rakenne</span>
+              <span data-lang="sv" style="display:none;">Hållbar konstruktion</span>
+              <span data-lang="en" style="display:none;">Durable construction</span>
+            </h4>
+            <p>
+              <span data-lang="et">Galvaniseeritud ja roostevaba teras. Tootmine Eestis, FerWorks OÜ.</span>
+              <span data-lang="fi" style="display:none;">Galvanoitu ja ruostumaton teräs. Valmistus Virossa, FerWorks OÜ.</span>
+              <span data-lang="sv" style="display:none;">Galvaniserat och rostfritt stål. Tillverkning i Estland, FerWorks OÜ.</span>
+              <span data-lang="en" style="display:none;">Galvanized and stainless steel. Manufactured in Estonia by FerWorks OÜ.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="toode" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Kuidas DSO Nordic töötab</span>
+        <span data-lang="fi" style="display:none;">Miten DSO Nordic toimii</span>
+        <span data-lang="sv" style="display:none;">Hur DSO Nordic fungerar</span>
+        <span data-lang="en" style="display:none;">How DSO Nordic works</span>
+      </h2>
+      <p class="section-lead">
+        <span data-lang="et">Kontrollitud desinfitseerimistsükkel farmi sissepääsul.</span>
+        <span data-lang="fi" style="display:none;">Hallittu desinfiointisykli tilan sisäänkäynnillä.</span>
+        <span data-lang="sv" style="display:none;">Kontrollerad desinfektionscykel vid gårdens infart.</span>
+        <span data-lang="en" style="display:none;">A controlled disinfection cycle at the farm entrance.</span>
+      </p>
+      <div class="section-content wide">
+        <div class="process-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h4>
+              <span data-lang="et">Käivitus</span>
+              <span data-lang="fi" style="display:none;">Käynnistys</span>
+              <span data-lang="sv" style="display:none;">Start</span>
+              <span data-lang="en" style="display:none;">Activation</span>
+            </h4>
+            <p>
+              <span data-lang="et">Tsükkel käivitub fotosilma läbimisel või kaugjuhtimispuldist. Märku annavad helisignaal ja kollane vilkur.</span>
+              <span data-lang="fi" style="display:none;">Sykli käynnistyy valokennon ohituksella tai kaukosäätimestä. Merkkinä äänimerkki ja keltainen vilkku.</span>
+              <span data-lang="sv" style="display:none;">Cykeln startar via fotocell eller fjärrkontroll. Signal via ljud och gul blinkning.</span>
+              <span data-lang="en" style="display:none;">The cycle starts via photo sensor or remote. Sound signal and yellow beacon indicate active operation.</span>
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h4>
+              <span data-lang="et">Ooteaeg</span>
+              <span data-lang="fi" style="display:none;">Viive</span>
+              <span data-lang="sv" style="display:none;">Fördröjning</span>
+              <span data-lang="en" style="display:none;">Delay</span>
+            </h4>
+            <p>
+              <span data-lang="et">Pärast käivitust kulub umbes 6–7 sekundit, enne kui pihustus algab. Selle aja jooksul ei tohi sõiduk väravasse siseneda.</span>
+              <span data-lang="fi" style="display:none;">Käynnistyksen jälkeen kuluu noin 6–7 sekuntia ennen suihkutuksen alkua. Ajoneuvo ei saa tänä aikana ajaa porttiin.</span>
+              <span data-lang="sv" style="display:none;">Efter start tar det ca 6–7 sekunder innan sprutningen börjar. Fordonet får inte köra in i porten under denna tid.</span>
+              <span data-lang="en" style="display:none;">After activation, spraying starts in about 6–7 seconds. The vehicle must not enter the gate during this time.</span>
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h4>
+              <span data-lang="et">Läbimine</span>
+              <span data-lang="fi" style="display:none;">Läpikulku</span>
+              <span data-lang="sv" style="display:none;">Passage</span>
+              <span data-lang="en" style="display:none;">Passage</span>
+            </h4>
+            <p>
+              <span data-lang="et">Sõiduk läbib värava aeglaselt (u 2,4 km/h). Vedelik kantakse peale neljast suunast — ülevalt, alt ja külgedelt. Komplektis on käsiprits rattakoobastele.</span>
+              <span data-lang="fi" style="display:none;">Ajoneuvo ajaa portin läpi hitaasti (n. 2,4 km/h). Neste levitetään neljästä suunnasta — ylhäältä, alhaalta ja sivuilta. Mukana käsiruisku pyöräkoteloihin.</span>
+              <span data-lang="sv" style="display:none;">Fordonet kör långsamt genom porten (ca 2,4 km/h). Vätskan appliceras från fyra håll — uppifrån, underifrån och från sidorna. Handmunstycke ingår för hjulhus.</span>
+              <span data-lang="en" style="display:none;">The vehicle passes slowly (approx. 2.4 km/h). Disinfectant is applied from four directions — above, below and sides. A handheld sprayer is included for wheel arches.</span>
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h4>
+              <span data-lang="et">Tsükli kestus</span>
+              <span data-lang="fi" style="display:none;">Syklin kesto</span>
+              <span data-lang="sv" style="display:none;">Cykelns längd</span>
+              <span data-lang="en" style="display:none;">Cycle duration</span>
+            </h4>
+            <p>
+              <span data-lang="et">Tsükkel kestab kuni 60 sekundit või kuni teise fotosilma läbimiseni / käsitsi peatamiseni. Pihustuskulu 100 L/min.</span>
+              <span data-lang="fi" style="display:none;">Sykli kestää enintään 60 sekuntia tai toisen valokennon ohitukseen / manuaaliseen pysäytykseen. Suihkutus 100 L/min.</span>
+              <span data-lang="sv" style="display:none;">Cykeln varar upp till 60 sekunder eller tills andra fotocell / manuell stopp. Sprutförbrukning 100 L/min.</span>
+              <span data-lang="en" style="display:none;">The cycle runs up to 60 seconds, or until the second photo sensor / manual stop. Spray rate 100 L/min.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why biosecurity matters -->
+  <section id="probleem" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Miks sõidukite bioohutus loeb</span>
+        <span data-lang="fi" style="display:none;">Miksi ajoneuvojen biosuojaus on tärkeää</span>
+        <span data-lang="sv" style="display:none;">Varför fordonsbiosäkerhet spelar roll</span>
+        <span data-lang="en" style="display:none;">Why vehicle biosecurity matters</span>
+      </h2>
+      <div class="section-content">
+        <p>
+          <span data-lang="et">Sõidukid on üks peamisi võimalusi, kuidas haigustekitajad farmi territooriumile jõuavad. Euroopa farmisektorit ohustavad muu hulgas sigade Aafrika katk ning suu- ja sõrataud.</span>
+          <span data-lang="fi" style="display:none;">Ajoneuvot ovat yksi tärkeimmistä reiteistä, joilla taudinaiheuttajat pääsevät tilan alueelle. Euroopan maatilasektoria uhkaavat muun muassa afrikkalainen sikarutto sekä suu- ja sorkkatauti.</span>
+          <span data-lang="sv" style="display:none;">Fordon är en av de viktigaste vägarna för smittämnen in på gårdsområdet. Europas jordbrukssektor hotas bland annat av afrikansk svinpest samt mul- och klövsjuka.</span>
+          <span data-lang="en" style="display:none;">Vehicles are one of the main ways pathogens reach a farm site. The European farm sector faces threats including African swine fever and foot-and-mouth disease.</span>
+        </p>
+        <h3>
+          <span data-lang="et">Nakatumise tagajärjed farmile</span>
+          <span data-lang="fi" style="display:none;">Tartunnan seuraukset tilalle</span>
+          <span data-lang="sv" style="display:none;">Följder av smitta för gården</span>
+          <span data-lang="en" style="display:none;">Consequences of infection for the farm</span>
+        </h3>
+        <ul>
+          <li>
+            <span data-lang="et">Tootmise seiskumine</span>
+            <span data-lang="fi" style="display:none;">Tuotannon pysähtyminen</span>
+            <span data-lang="sv" style="display:none;">Produktionsstopp</span>
+            <span data-lang="en" style="display:none;">Production halt</span>
+          </li>
+          <li>
+            <span data-lang="et">Loomade massiline hävitamine</span>
+            <span data-lang="fi" style="display:none;">Eläinten massatuhot</span>
+            <span data-lang="sv" style="display:none;">Massavlivning av djur</span>
+            <span data-lang="en" style="display:none;">Mass culling of animals</span>
+          </li>
+          <li>
+            <span data-lang="et">Piirkondlik isolatsioon</span>
+            <span data-lang="fi" style="display:none;">Alueellinen eristys</span>
+            <span data-lang="sv" style="display:none;">Regional isolering</span>
+            <span data-lang="en" style="display:none;">Regional isolation</span>
+          </li>
+          <li>
+            <span data-lang="et">Rasked majanduslikud tagajärjed</span>
+            <span data-lang="fi" style="display:none;">Vakavat taloudelliset seuraukset</span>
+            <span data-lang="sv" style="display:none;">Allvarliga ekonomiska konsekvenser</span>
+            <span data-lang="en" style="display:none;">Serious economic impact</span>
+          </li>
+        </ul>
+        <p><strong>
+          <span data-lang="et">DSO Nordic aitab seda riski juhtida kontrollitud desinfitseerimisega farmi sissepääsul.</span>
+          <span data-lang="fi" style="display:none;">DSO Nordic auttaa hallitsemaan tätä riskiä hallitulla desinfioinnilla tilan sisäänkäynnillä.</span>
+          <span data-lang="sv" style="display:none;">DSO Nordic hjälper till att hantera denna risk med kontrollerad desinfektion vid gårdens infart.</span>
+          <span data-lang="en" style="display:none;">DSO Nordic helps manage this risk with controlled disinfection at the farm entrance.</span>
+        </strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety & use limits -->
+  <section id="ohutus" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Ohutus ja kasutamine</span>
+        <span data-lang="fi" style="display:none;">Turvallisuus ja käyttö</span>
+        <span data-lang="sv" style="display:none;">Säkerhet och användning</span>
+        <span data-lang="en" style="display:none;">Safety and operation</span>
+      </h2>
+      <div class="section-content wide">
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Sõiduki nõuded</span>
+              <span data-lang="fi" style="display:none;">Ajoneuvovaatimukset</span>
+              <span data-lang="sv" style="display:none;">Fordonskrav</span>
+              <span data-lang="en" style="display:none;">Vehicle requirements</span>
+            </h4>
+            <p>
+              <span data-lang="et">Maksimaalne kõrgus 4 m. Minimaalne kliirens 120 mm. Enne läbimist sulge uksed, aknad ja muud avaused.</span>
+              <span data-lang="fi" style="display:none;">Enimmäiskorkeus 4 m. Vähimmäismaavara 120 mm. Sulje ovet, ikkunat ja muut aukot ennen läpikulkua.</span>
+              <span data-lang="sv" style="display:none;">Maxhöjd 4 m. Minsta markfrigång 120 mm. Stäng dörrar, fönster och övriga öppningar före passage.</span>
+              <span data-lang="en" style="display:none;">Maximum height 4 m. Minimum ground clearance 120 mm. Close doors, windows and other openings before passage.</span>
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Kemikaal</span>
+              <span data-lang="fi" style="display:none;">Kemikaali</span>
+              <span data-lang="sv" style="display:none;">Kemikalie</span>
+              <span data-lang="en" style="display:none;">Chemical</span>
+            </h4>
+            <p>
+              <span data-lang="et">Seade on loodud kasutamiseks umbes 1% lahusega, mille põhitoimeaine on klooramiin-T. Muude kemikaalide korral konsulteeri tootjaga.</span>
+              <span data-lang="fi" style="display:none;">Laite on suunniteltu noin 1 % liuokselle, jonka päätoimeaine on klooramiini-T. Muista kemikaaleista konsultoi valmistajaa.</span>
+              <span data-lang="sv" style="display:none;">Anläggningen är avsedd för ca 1 % lösning med kloramin-T som huvudämne. Vid andra kemikalier, kontakta tillverkaren.</span>
+              <span data-lang="en" style="display:none;">Designed for approximately 1% solution based on chloramine-T. Consult the manufacturer before using other chemicals.</span>
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Ohutusfunktsioonid</span>
+              <span data-lang="fi" style="display:none;">Turvatoiminnot</span>
+              <span data-lang="sv" style="display:none;">Säkerhetsfunktioner</span>
+              <span data-lang="en" style="display:none;">Safety features</span>
+            </h4>
+            <p>
+              <span data-lang="et">Hädaseiskamine, mahuti tasemeandur, helisignaal ja vilkur. Tsükli ajal peab juht jääma kabiini.</span>
+              <span data-lang="fi" style="display:none;">Hätäseis, säiliön tasonanturi, äänimerkki ja vilkku. Kuljettajan on pysyttävä ohjaamossa syklin aikana.</span>
+              <span data-lang="sv" style="display:none;">Nödstopp, nivågivare i tanken, ljudsignal och blinkning. Föraren ska stanna i hytten under cykeln.</span>
+              <span data-lang="en" style="display:none;">Emergency stop, tank level sensor, sound signal and beacon. The driver must remain in the cab during the cycle.</span>
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h4>
+              <span data-lang="et">Paigaldus</span>
+              <span data-lang="fi" style="display:none;">Asennus</span>
+              <span data-lang="sv" style="display:none;">Installation</span>
+              <span data-lang="en" style="display:none;">Installation</span>
+            </h4>
+            <p>
+              <span data-lang="et">Paigaldusala vähemalt 7 × 3 m. Aluspind: asfalt, betoon või tihendatud puistepinnas. Toide: CEE 16A, 3-faas. Paigaldust tohivad teha volitatud isikud.</span>
+              <span data-lang="fi" style="display:none;">Asennusalue vähintään 7 × 3 m. Alusta: asfaltti, betoni tai tiivistetty murske. Virta: CEE 16A, 3-vaihe. Asennuksen saa tehdä valtuutettu henkilö.</span>
+              <span data-lang="sv" style="display:none;">Installationsyta minst 7 × 3 m. Underlag: asfalt, betong eller packat grus. Ström: CEE 16A, 3-fas. Installation får utföras av behörig personal.</span>
+              <span data-lang="en" style="display:none;">Installation area at least 7 × 3 m. Base: asphalt, concrete or compacted fill. Power: CEE 16A, 3-phase. Installation by authorised personnel only.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical specifications -->
+  <section id="tehnika" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Tehnilised andmed</span>
+        <span data-lang="fi" style="display:none;">Tekniset tiedot</span>
+        <span data-lang="sv" style="display:none;">Tekniska data</span>
+        <span data-lang="en" style="display:none;">Technical data</span>
+      </h2>
+      <div class="section-content wide">
+        <table class="tech-table">
+          <thead>
+            <tr>
+              <th>
+                <span data-lang="et">Parameeter</span>
+                <span data-lang="fi" style="display:none;">Ominaisuus</span>
+                <span data-lang="sv" style="display:none;">Egenskap</span>
+                <span data-lang="en" style="display:none;">Parameter</span>
+              </th>
+              <th>
+                <span data-lang="et">Väärtus</span>
+                <span data-lang="fi" style="display:none;">Arvo</span>
+                <span data-lang="sv" style="display:none;">Värde</span>
+                <span data-lang="en" style="display:none;">Value</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Sisemõõdud (laius × kõrgus)</span>
+                <span data-lang="fi" style="display:none;">Sisämitat (leveys × korkeus)</span>
+                <span data-lang="sv" style="display:none;">Invändiga mått (bredd × höjd)</span>
+                <span data-lang="en" style="display:none;">Internal dimensions (width × height)</span>
+              </strong></td>
+              <td>4,0 m × 4,8 m</td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Välismõõdud (laius × kõrgus)</span>
+                <span data-lang="fi" style="display:none;">Ulkimitat (leveys × korkeus)</span>
+                <span data-lang="sv" style="display:none;">Utvändiga mått (bredd × höjd)</span>
+                <span data-lang="en" style="display:none;">External dimensions (width × height)</span>
+              </strong></td>
+              <td>5,4 m × 5,1 m</td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Materjal</span>
+                <span data-lang="fi" style="display:none;">Materiaali</span>
+                <span data-lang="sv" style="display:none;">Material</span>
+                <span data-lang="en" style="display:none;">Material</span>
+              </strong></td>
+              <td>
+                <span data-lang="et">Galvaniseeritud ja roostevaba teras</span>
+                <span data-lang="fi" style="display:none;">Galvanoitu ja ruostumaton teräs</span>
+                <span data-lang="sv" style="display:none;">Galvaniserat och rostfritt stål</span>
+                <span data-lang="en" style="display:none;">Galvanized and stainless steel</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Mahuti</span>
+                <span data-lang="fi" style="display:none;">Säiliö</span>
+                <span data-lang="sv" style="display:none;">Tank</span>
+                <span data-lang="en" style="display:none;">Tank</span>
+              </strong></td>
+              <td>
+                <span data-lang="et">1000 L IBC konteiner (PE)</span>
+                <span data-lang="fi" style="display:none;">1000 L IBC-säiliö (PE)</span>
+                <span data-lang="sv" style="display:none;">1000 L IBC-behållare (PE)</span>
+                <span data-lang="en" style="display:none;">1000 L IBC container (PE)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Elektritoide</span>
+                <span data-lang="fi" style="display:none;">Sähkösyöttö</span>
+                <span data-lang="sv" style="display:none;">Strömförsörjning</span>
+                <span data-lang="en" style="display:none;">Power supply</span>
+              </strong></td>
+              <td>380 V / IP66 · CEE 16A, 3-faas</td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Pihustussurve</span>
+                <span data-lang="fi" style="display:none;">Suihkutuspaine</span>
+                <span data-lang="sv" style="display:none;">Spruttryck</span>
+                <span data-lang="en" style="display:none;">Spraying pressure</span>
+              </strong></td>
+              <td>~4 bar</td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Pihustuskulu</span>
+                <span data-lang="fi" style="display:none;">Suihkutuskulutus</span>
+                <span data-lang="sv" style="display:none;">Sprutförbrukning</span>
+                <span data-lang="en" style="display:none;">Spray consumption</span>
+              </strong></td>
+              <td>100 L/min</td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Töötemperatuur</span>
+                <span data-lang="fi" style="display:none;">Käyttölämpötila</span>
+                <span data-lang="sv" style="display:none;">Arbetstemperatur</span>
+                <span data-lang="en" style="display:none;">Operating temperature</span>
+              </strong></td>
+              <td>−20 °C kuni +40 °C</td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Müratase</span>
+                <span data-lang="fi" style="display:none;">Melutaso</span>
+                <span data-lang="sv" style="display:none;">Ljudnivå</span>
+                <span data-lang="en" style="display:none;">Noise level</span>
+              </strong></td>
+              <td>≤ 70 dB(A)</td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Paigalduspind</span>
+                <span data-lang="fi" style="display:none;">Asennusalue</span>
+                <span data-lang="sv" style="display:none;">Installationsyta</span>
+                <span data-lang="en" style="display:none;">Installation area</span>
+              </strong></td>
+              <td>
+                <span data-lang="et">7 m × 3 m — asfalt, betoon või tihendatud puistepinnas</span>
+                <span data-lang="fi" style="display:none;">7 m × 3 m — asfaltti, betoni tai tiivistetty murske</span>
+                <span data-lang="sv" style="display:none;">7 m × 3 m — asfalt, betong eller packat grus</span>
+                <span data-lang="en" style="display:none;">7 m × 3 m — asphalt, concrete or compacted fill</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>
+                <span data-lang="et">Sõiduki piirangud</span>
+                <span data-lang="fi" style="display:none;">Ajoneuvorajoitukset</span>
+                <span data-lang="sv" style="display:none;">Fordonsbegränsningar</span>
+                <span data-lang="en" style="display:none;">Vehicle limits</span>
+              </strong></td>
+              <td>
+                <span data-lang="et">Max kõrgus 4 m · min kliirens 120 mm</span>
+                <span data-lang="fi" style="display:none;">Max korkeus 4 m · min maavara 120 mm</span>
+                <span data-lang="sv" style="display:none;">Max höjd 4 m · min markfrigång 120 mm</span>
+                <span data-lang="en" style="display:none;">Max height 4 m · min clearance 120 mm</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>
+          <span data-lang="et">Lisavarustus</span>
+          <span data-lang="fi" style="display:none;">Lisävarusteet</span>
+          <span data-lang="sv" style="display:none;">Extrautrustning</span>
+          <span data-lang="en" style="display:none;">Optional equipment</span>
+        </h3>
+        <ul>
+          <li>
+            <span data-lang="et">Tuulekardinad</span>
+            <span data-lang="fi" style="display:none;">Tuuliverhot</span>
+            <span data-lang="sv" style="display:none;">Vindgardiner</span>
+            <span data-lang="en" style="display:none;">Wind curtains</span>
+          </li>
+          <li>
+            <span data-lang="et">Kaugjuhtimispult või liikumisandur / fotosilm</span>
+            <span data-lang="fi" style="display:none;">Kaukosäädin tai liiketunnistin / valokenno</span>
+            <span data-lang="sv" style="display:none;">Fjärrkontroll eller rörelsesensor / fotocell</span>
+            <span data-lang="en" style="display:none;">Remote control or motion sensor / photo sensor</span>
+          </li>
+          <li>
+            <span data-lang="et">Soojustatud mahutimaja</span>
+            <span data-lang="fi" style="display:none;">Eristetty säiliötalo</span>
+            <span data-lang="sv" style="display:none;">Isolerat tankhus</span>
+            <span data-lang="en" style="display:none;">Insulated tank housing</span>
+          </li>
+          <li>
+            <span data-lang="et">Betoonraskused</span>
+            <span data-lang="fi" style="display:none;">Betonipainot</span>
+            <span data-lang="sv" style="display:none;">Betongvikter</span>
+            <span data-lang="en" style="display:none;">Concrete weights</span>
+          </li>
+          <li>
+            <span data-lang="et">Ohutuspiirded</span>
+            <span data-lang="fi" style="display:none;">Turva-aidat</span>
+            <span data-lang="sv" style="display:none;">Säkerhetsbarriärer</span>
+            <span data-lang="en" style="display:none;">Safety barriers</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compliance -->
+  <section id="vastavus" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Vastavus</span>
+        <span data-lang="fi" style="display:none;">Vaatimustenmukaisuus</span>
+        <span data-lang="sv" style="display:none;">Överensstämmelse</span>
+        <span data-lang="en" style="display:none;">Compliance</span>
+      </h2>
+      <p class="section-lead">
+        <span data-lang="et">Desinfitseerimisvärav D.S.O Nordic vastab EÜ vastavusdeklaratsioonile (FerWorks OÜ).</span>
+        <span data-lang="fi" style="display:none;">Desinfiointiportti D.S.O Nordic täyttää EY-vaatimustenmukaisuusvakuutuksen (FerWorks OÜ).</span>
+        <span data-lang="sv" style="display:none;">Desinfektionsporten D.S.O Nordic uppfyller EG-försäkran om överensstämmelse (FerWorks OÜ).</span>
+        <span data-lang="en" style="display:none;">The D.S.O Nordic disinfection gate is covered by an EC declaration of conformity (FerWorks OÜ).</span>
+      </p>
+      <div class="section-content">
+        <ul class="compliance-list">
+          <li>
+            <span data-lang="et">Masinadirektiiv 2006/42/EC</span>
+            <span data-lang="fi" style="display:none;">Konedirektiivi 2006/42/EC</span>
+            <span data-lang="sv" style="display:none;">Maskindirektivet 2006/42/EC</span>
+            <span data-lang="en" style="display:none;">Machinery Directive 2006/42/EC</span>
+          </li>
+          <li>
+            <span data-lang="et">Elektromagnetilise ühilduvuse direktiiv 2014/30/EL</span>
+            <span data-lang="fi" style="display:none;">Sähkömagneettista yhteensopivuutta koskeva direktiivi 2014/30/EU</span>
+            <span data-lang="sv" style="display:none;">EMC-direktivet 2014/30/EU</span>
+            <span data-lang="en" style="display:none;">EMC Directive 2014/30/EU</span>
+          </li>
+          <li>EN 17281:2021</li>
+          <li>EN ISO 12100:2010</li>
+          <li>EN ISO 13849-1:2023</li>
+          <li>
+            <span data-lang="et">Müratase töökohtadel ≤ 70 dB(A)</span>
+            <span data-lang="fi" style="display:none;">Melutaso työpaikoilla ≤ 70 dB(A)</span>
+            <span data-lang="sv" style="display:none;">Ljudnivå på arbetsplatser ≤ 70 dB(A)</span>
+            <span data-lang="en" style="display:none;">Workplace noise level ≤ 70 dB(A)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installations -->
+  <section id="paigaldused" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Paigaldused</span>
+        <span data-lang="fi" style="display:none;">Asennukset</span>
+        <span data-lang="sv" style="display:none;">Installationer</span>
+        <span data-lang="en" style="display:none;">Installations</span>
+      </h2>
+      <p class="section-lead">
+        <span data-lang="et">DSO Nordic väravad on paigaldatud Eesti farmidesse.</span>
+        <span data-lang="fi" style="display:none;">DSO Nordic -portteja on asennettu virolaisille tiloille.</span>
+        <span data-lang="sv" style="display:none;">DSO Nordic-portar är installerade på gårdar i Estland.</span>
+        <span data-lang="en" style="display:none;">DSO Nordic gates are installed at farms in Estonia.</span>
+      </p>
+      <div class="install-list">
+        <div class="install-card">
+          <h4>Ekseko</h4>
+          <p>
+            <span data-lang="et">1 värav</span>
+            <span data-lang="fi" style="display:none;">1 portti</span>
+            <span data-lang="sv" style="display:none;">1 port</span>
+            <span data-lang="en" style="display:none;">1 gate</span>
+          </p>
+        </div>
+        <div class="install-card">
+          <h4>Viru Peekon OÜ</h4>
+          <p>
+            <span data-lang="et">7 väravat</span>
+            <span data-lang="fi" style="display:none;">7 porttia</span>
+            <span data-lang="sv" style="display:none;">7 portar</span>
+            <span data-lang="en" style="display:none;">7 gates</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="kontakt" class="contact">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">
+        <span data-lang="et">Küsi pakkumist</span>
+        <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
+        <span data-lang="sv" style="display:none;">Begär offert</span>
+        <span data-lang="en" style="display:none;">Request a quote</span>
+      </h2>
+      <p class="section-lead">
+        <span data-lang="et">Kirjelda farmi vajadusi — vastame pakkumisega.</span>
+        <span data-lang="fi" style="display:none;">Kerro tilan tarpeista — vastaamme tarjouksella.</span>
+        <span data-lang="sv" style="display:none;">Beskriv gårdens behov — vi återkommer med offert.</span>
+        <span data-lang="en" style="display:none;">Describe your farm requirements — we will respond with a quote.</span>
+      </p>
+
+      <div class="contact-info">
+        <form action="https://formspree.io/f/mldldqnv" method="POST" class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <input type="text" name="name" required placeholder="Nimi / Name" class="form-input">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" required placeholder="E-mail" class="form-input">
+          </div>
+          <div class="form-group">
+            <input type="text" name="company" placeholder="Ettevõte / Company" class="form-input">
+          </div>
+          <div class="form-group">
+            <textarea name="message" required placeholder="Sõnum / Message" rows="4" class="form-input"></textarea>
+          </div>
+          <button type="submit" class="cta-button">
+            <span data-lang="et">Saada sõnum</span>
+            <span data-lang="fi" style="display:none;">Lähetä viesti</span>
+            <span data-lang="sv" style="display:none;">Skicka meddelande</span>
+            <span data-lang="en" style="display:none;">Send message</span>
+          </button>
+        </form>
+
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+          <p style="margin-bottom: 0.75rem;">
+            <span data-lang="et">Või kirjuta otse:</span>
+            <span data-lang="fi" style="display:none;">Tai kirjoita suoraan:</span>
+            <span data-lang="sv" style="display:none;">Eller skriv direkt:</span>
+            <span data-lang="en" style="display:none;">Or email directly:</span>
+          </p>
+          <a href="mailto:mail@ferworks.eu" class="cta-button" style="display: inline-block;">mail@ferworks.eu</a>
+          <p style="margin-top: 1.25rem; opacity: 0.8; font-size: 0.95rem;">
+            FerWorks OÜ<br>
+            Rakvere tee 5-21, Kadrina 45201<br>
+            <a href="https://www.ferworks.eu/" style="color: #F07228;">ferworks.eu</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <p>
+            <span data-lang="et">&copy; 2026 DSO Nordic / FerWorks OÜ. Kõik õigused kaitstud.</span>
+            <span data-lang="fi" style="display:none;">&copy; 2026 DSO Nordic / FerWorks OÜ. Kaikki oikeudet pidätetään.</span>
+            <span data-lang="sv" style="display:none;">&copy; 2026 DSO Nordic / FerWorks OÜ. Alla rättigheter förbehållna.</span>
+            <span data-lang="en" style="display:none;">&copy; 2026 DSO Nordic / FerWorks OÜ. All rights reserved.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleFormSubmit(event) {
+      const currentLang = localStorage.getItem('dso-lang') || 'et';
+      let message = 'Sending message...';
+
+      if (currentLang === 'et') message = 'Sõnumi saatmine...';
+      else if (currentLang === 'fi') message = 'Viestin lähetys...';
+      else if (currentLang === 'sv') message = 'Skickar meddelande...';
+
+      const notification = document.createElement('div');
+      notification.textContent = message;
+      notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #F07228;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        z-index: 1000;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      `;
+      document.body.appendChild(notification);
+
+      setTimeout(() => {
+        notification.remove();
+      }, 3000);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(33, 46, 54, 0.98)';
+      } else {
+        navbar.style.background = 'rgba(33, 46, 54, 0.95)';
+      }
+    });
+
+    function setLanguage(lang) {
+      document.querySelectorAll('span[data-lang]').forEach(function(el) {
+        if (el.getAttribute('data-lang') === lang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+      document.documentElement.lang = lang;
+      localStorage.setItem('dso-lang', lang);
+    }
+
+    document.querySelectorAll('.lang-flag').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        setLanguage(this.getAttribute('data-lang-btn'));
+      });
+    });
+
+    (function() {
+      var lang = localStorage.getItem('dso-lang') || 'et';
+      setLanguage(lang);
+    })();
+  </script>
+</body>
+</html>
