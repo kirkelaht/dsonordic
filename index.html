@@ -450,6 +450,112 @@
       line-height: 1.6;
     }
 
+    /* Partners */
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto 3rem;
+    }
+
+    .partner-card {
+      background: white;
+      padding: 1.75rem;
+      border-radius: 5px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      border-top: 3px solid #F07228;
+    }
+
+    .partner-card .region {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #F07228;
+      margin-bottom: 0.5rem;
+    }
+
+    .partner-card h3 {
+      color: #212E36;
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .partner-card p {
+      margin: 0;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    .partner-card .partner-actions {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .partner-card .partner-actions a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #F07228;
+      text-decoration: none;
+    }
+
+    .partner-card .partner-actions a:hover {
+      text-decoration: underline;
+    }
+
+    .video-block {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .video-block h3 {
+      color: #212E36;
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .video-block .video-lead {
+      color: #555;
+      margin: 0 auto 1.5rem;
+      max-width: 640px;
+      line-height: 1.65;
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+      border: 2px solid #F07228;
+      background: #212E36;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-caption {
+      margin-top: 1rem;
+      color: #555;
+      font-size: 0.98rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     /* FAQ */
     .faq-list {
       max-width: 800px;
@@ -587,7 +693,8 @@
 
       .benefits-grid,
       .process-steps,
-      .install-list {
+      .install-list,
+      .partner-grid {
         grid-template-columns: 1fr;
       }
 
@@ -650,6 +757,12 @@
           <span data-lang="fi" style="display:none;">Toiminta</span>
           <span data-lang="sv" style="display:none;">Funktion</span>
           <span data-lang="en" style="display:none;">How it works</span>
+        </a></li>
+        <li><a href="#partnerid">
+          <span data-lang="et">Partnerid</span>
+          <span data-lang="fi" style="display:none;">Kumppanit</span>
+          <span data-lang="sv" style="display:none;">Partner</span>
+          <span data-lang="en" style="display:none;">Partners</span>
         </a></li>
         <li><a href="#ohutus">
           <span data-lang="et">Ohutus</span>
@@ -920,6 +1033,122 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local partners -->
+  <section id="partnerid" class="content-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span data-lang="et">Kohalikud partnerid. Kohalik tugi.</span>
+        <span data-lang="fi" style="display:none;">Paikalliset kumppanit. Paikallinen tuki.</span>
+        <span data-lang="sv" style="display:none;">Lokala partner. Lokalt stöd.</span>
+        <span data-lang="en" style="display:none;">Local partners. Local support.</span>
+      </h2>
+      <p class="section-lead">
+        <span data-lang="et">DSO Nordic on toodetud Eestis, kuid meie eesmärk on pakkuda klientidele tuge võimalikult lähedal nende farmile.</span>
+        <span data-lang="fi" style="display:none;">DSO Nordic valmistetaan Virossa, mutta tavoitteemme on tarjota asiakkaille tukea mahdollisimman lähellä heidän tilaansa.</span>
+        <span data-lang="sv" style="display:none;">DSO Nordic tillverkas i Estland, men vårt mål är att ge kunderna stöd så nära deras gård som möjligt.</span>
+        <span data-lang="en" style="display:none;">DSO Nordic is manufactured in Estonia, but our goal is to provide customers with support as close to their farm as possible.</span>
+      </p>
+
+      <div class="partner-grid">
+        <div class="partner-card">
+          <div class="region">
+            <span data-lang="et">Eesti</span>
+            <span data-lang="fi" style="display:none;">Viro</span>
+            <span data-lang="sv" style="display:none;">Estland</span>
+            <span data-lang="en" style="display:none;">Estonia</span>
+          </div>
+          <h3>FerWorks OÜ</h3>
+          <p>
+            <span data-lang="et">Tootmine ja tehniline tugi</span>
+            <span data-lang="fi" style="display:none;">Valmistus ja tekninen tuki</span>
+            <span data-lang="sv" style="display:none;">Tillverkning och tekniskt stöd</span>
+            <span data-lang="en" style="display:none;">Manufacturing and technical support</span>
+          </p>
+        </div>
+        <div class="partner-card">
+          <div class="region">
+            <span data-lang="et">Baltikum</span>
+            <span data-lang="fi" style="display:none;">Baltia</span>
+            <span data-lang="sv" style="display:none;">Baltikum</span>
+            <span data-lang="en" style="display:none;">Baltics</span>
+          </div>
+          <h3>Dimedium</h3>
+          <p>
+            <span data-lang="et">Kohalik edasimüüja ja paigaldaja</span>
+            <span data-lang="fi" style="display:none;">Paikallinen jälleenmyyjä ja asentaja</span>
+            <span data-lang="sv" style="display:none;">Lokal återförsäljare och installatör</span>
+            <span data-lang="en" style="display:none;">Local reseller and installer</span>
+          </p>
+        </div>
+        <div class="partner-card">
+          <div class="region">
+            <span data-lang="et">Soome ja Rootsi</span>
+            <span data-lang="fi" style="display:none;">Suomi ja Ruotsi</span>
+            <span data-lang="sv" style="display:none;">Finland och Sverige</span>
+            <span data-lang="en" style="display:none;">Finland &amp; Sweden</span>
+          </div>
+          <h3>
+            <span data-lang="et">Võta ühendust DSO Nordicuga</span>
+            <span data-lang="fi" style="display:none;">Ota yhteyttä DSO Nordiciin</span>
+            <span data-lang="sv" style="display:none;">Kontakta DSO Nordic</span>
+            <span data-lang="en" style="display:none;">Contact DSO Nordic</span>
+          </h3>
+          <p>
+            <span data-lang="et">Otsime partnereid ja vastame pakkumispäringutele.</span>
+            <span data-lang="fi" style="display:none;">Etsimme kumppaneita ja vastaamme tarjouspyyntöihin.</span>
+            <span data-lang="sv" style="display:none;">Vi söker partner och svarar på offertförfrågningar.</span>
+            <span data-lang="en" style="display:none;">We welcome partner enquiries and quote requests.</span>
+          </p>
+          <div class="partner-actions">
+            <a href="mailto:mail@ferworks.eu?subject=Become%20a%20partner">
+              <span data-lang="et">Saa partneriks</span>
+              <span data-lang="fi" style="display:none;">Ryhdy kumppaniksi</span>
+              <span data-lang="sv" style="display:none;">Bli partner</span>
+              <span data-lang="en" style="display:none;">Become a partner</span>
+            </a>
+            <a href="#kontakt">
+              <span data-lang="et">Küsi pakkumist</span>
+              <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
+              <span data-lang="sv" style="display:none;">Begär offert</span>
+              <span data-lang="en" style="display:none;">Request a quote</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-block">
+        <h3>
+          <span data-lang="et">DSO Nordic tegevuses</span>
+          <span data-lang="fi" style="display:none;">DSO Nordic käytössä</span>
+          <span data-lang="sv" style="display:none;">DSO Nordic i drift</span>
+          <span data-lang="en" style="display:none;">DSO Nordic in action</span>
+        </h3>
+        <p class="video-lead">
+          <span data-lang="et">Vaata DSO Nordic paigaldust Lätis →</span>
+          <span data-lang="fi" style="display:none;">Katso DSO Nordic -asennus Latviassa →</span>
+          <span data-lang="sv" style="display:none;">Se DSO Nordic-installation i Lettland →</span>
+          <span data-lang="en" style="display:none;">See a DSO Nordic installation in Latvia →</span>
+        </p>
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/NKj7LEuX-v4"
+            title="DSO Nordic installation in Latvia"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
+        <p class="video-caption">
+          <span data-lang="et">Videos on näha DSO Nordic desinfitseerimislahenduse paigaldus ja kasutuselevõtt Läti farmis koostöös meie kohaliku partneriga.</span>
+          <span data-lang="fi" style="display:none;">Videolla näkyy DSO Nordic -desinfiointiratkaisun asennus ja käyttöönotto latvialaisella tilalla yhteistyössä paikallisen kumppanimme kanssa.</span>
+          <span data-lang="sv" style="display:none;">I videon syns installation och idrifttagning av DSO Nordics desinfektionslösning på en lettisk gård tillsammans med vår lokala partner.</span>
+          <span data-lang="en" style="display:none;">The video shows installation and commissioning of the DSO Nordic disinfection solution on a Latvian farm together with our local partner.</span>
+        </p>
       </div>
     </div>
   </section>
