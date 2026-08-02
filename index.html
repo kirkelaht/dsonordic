@@ -11,16 +11,17 @@
   <meta property="og:title" content="DSO Nordic - Sõidukite desinfitseerimisvärav põhjamaisesse kliimasse" />
   <meta property="og:description" content="Automaatne sõidukite desinfitseerimine farmidele. Töökindel -20°C kuni +40°C. Tootja FerWorks OÜ, Eesti." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dsonordic.vercel.app" />
-  <meta property="og:image" content="https://dsonordic.vercel.app/Image/IMG_9338.JPG" />
+  <meta property="og:url" content="https://dsonordic.com" />
+  <meta property="og:image" content="https://dsonordic.com/Image/IMG_9338.JPG" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="DSO Nordic vehicle disinfection gate" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DSO Nordic - Sõidukite desinfitseerimisvärav" />
   <meta name="twitter:description" content="Automaatne sõidukite desinfitseerimine farmidele. Töökindel -20°C kuni +40°C. Tootja FerWorks OÜ, Eesti." />
-  <meta name="twitter:image" content="https://dsonordic.vercel.app/Image/IMG_9338.JPG" />
+  <meta name="twitter:image" content="https://dsonordic.com/Image/IMG_9338.JPG" />
   <meta name="twitter:image:alt" content="DSO Nordic vehicle disinfection gate" />
+  <link rel="canonical" href="https://dsonordic.com/" />
   <style>
     * {
       margin: 0;
@@ -34,6 +35,34 @@
       color: #333;
       background: #212E36;
       min-height: 100vh;
+    }
+
+    html {
+      scroll-padding-top: 96px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: #F07228;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      z-index: 2000;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #F07228;
+      outline-offset: 3px;
     }
 
     .container {
@@ -239,7 +268,7 @@
     }
 
     .section-content strong {
-      color: #F07228;
+      color: #b34e14;
     }
 
     /* Benefits Grid */
@@ -264,10 +293,15 @@
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     }
 
-    .benefit-card h4 {
-      color: #F07228;
-      margin-bottom: 1rem;
+    .section-content .benefit-card h3,
+    .section-content .step-card h3,
+    .benefit-card h3,
+    .step-card h3,
+    .install-card h3 {
+      color: #212E36;
+      margin: 0 0 0.75rem;
       font-size: 1.15rem;
+      line-height: 1.35;
     }
 
     .benefit-card p {
@@ -324,11 +358,6 @@
 
     .step-card:hover {
       transform: translateY(-5px);
-    }
-
-    .step-card h4 {
-      color: #F07228;
-      margin-bottom: 0.75rem;
     }
 
     .step-card p {
@@ -393,6 +422,32 @@
       border-left: 4px solid #F07228;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
       margin: 0;
+    }
+
+    .ce-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      margin: 0 auto 2rem;
+      max-width: 720px;
+      text-align: left;
+    }
+
+    .ce-mark {
+      flex: 0 0 auto;
+      width: 88px;
+      height: 64px;
+      color: #212E36;
+    }
+
+    .ce-block p {
+      margin: 0;
+      max-width: 28rem;
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
     /* FAQ */
@@ -493,7 +548,16 @@
     /* Responsive Design */
     @media (max-width: 768px) {
       .nav-links {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1rem;
+        width: 100%;
+        margin-top: 0.75rem;
+        font-size: 0.92rem;
+      }
+
+      .nav-content .cta-button {
+        margin-top: 0.75rem;
       }
 
       .hero h1 {
@@ -502,6 +566,10 @@
 
       .hero p {
         font-size: 1.1rem;
+      }
+
+      .hero-product-image {
+        max-width: 90% !important;
       }
 
       .hero-buttons {
@@ -559,11 +627,17 @@
     }
   </style>
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main">
+    <span data-lang="et">Mine põhisisu juurde</span>
+    <span data-lang="fi" style="display:none;">Siirry pääsisältöön</span>
+    <span data-lang="sv" style="display:none;">Hoppa till huvudinnehåll</span>
+    <span data-lang="en" style="display:none;">Skip to main content</span>
+  </a>
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main">
     <div class="nav-content">
-      <a href="#" class="logo">DSO Nordic</a>
+      <a href="#top" class="logo">DSO Nordic</a>
       <ul class="nav-links">
         <li><a href="#eelised">
           <span data-lang="et">Eelised</span>
@@ -576,6 +650,12 @@
           <span data-lang="fi" style="display:none;">Toiminta</span>
           <span data-lang="sv" style="display:none;">Funktion</span>
           <span data-lang="en" style="display:none;">How it works</span>
+        </a></li>
+        <li><a href="#ohutus">
+          <span data-lang="et">Ohutus</span>
+          <span data-lang="fi" style="display:none;">Turvallisuus</span>
+          <span data-lang="sv" style="display:none;">Säkerhet</span>
+          <span data-lang="en" style="display:none;">Safety</span>
         </a></li>
         <li><a href="#tehnika">
           <span data-lang="et">Tehnika</span>
@@ -608,27 +688,30 @@
         <span data-lang="sv" style="display:none;">Begär offert</span>
         <span data-lang="en" style="display:none;">Request a quote</span>
       </a>
-      <div class="lang-switcher">
-        <button class="lang-flag" data-lang-btn="et" title="Eesti" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
-          <img src="Image/eestilipp.png" alt="Eesti lipp" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" class="lang-flag" data-lang-btn="et" title="Eesti" aria-label="Eesti" aria-pressed="true" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="Image/eestilipp.png" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
         </button>
-        <button class="lang-flag" data-lang-btn="fi" title="Suomi" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
-          <img src="Image/soomelipp.png" alt="Suomen lippu" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        <button type="button" class="lang-flag" data-lang-btn="fi" title="Suomi" aria-label="Suomi" aria-pressed="false" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="Image/soomelipp.png" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
         </button>
-        <button class="lang-flag" data-lang-btn="sv" title="Svenska" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
-          <img src="Image/rootsilipp.png" alt="Svenska flaggan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        <button type="button" class="lang-flag" data-lang-btn="sv" title="Svenska" aria-label="Svenska" aria-pressed="false" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="Image/rootsilipp.png" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
         </button>
-        <button class="lang-flag" data-lang-btn="en" title="English" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
-          <img src="Image/uklipp.png" alt="UK flag" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
+        <button type="button" class="lang-flag" data-lang-btn="en" title="English" aria-label="English" aria-pressed="false" style="background: none; border: none; cursor: pointer; width: 32px; height: 24px; padding: 0; margin: 0 4px;">
+          <img src="Image/uklipp.png" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 2px;">
         </button>
       </div>
     </div>
   </nav>
 
+  <main id="main">
+  <!-- TODO (later): add customer testimonials/quotes when approved for publication. -->
+
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
-      <h1>
+      <h1 id="hero-heading">
         <span data-lang="et">Kaitse farmi enne, kui sõiduk sellele siseneb.</span>
         <span data-lang="fi" style="display:none;">Suojaa tila ennen kuin ajoneuvo saapuu alueelle.</span>
         <span data-lang="sv" style="display:none;">Skydda gården innan fordonet kör in.</span>
@@ -652,18 +735,8 @@
         <span data-lang="sv" style="display:none;">Nordisk design. Estnisk tillverkning.</span>
         <span data-lang="en" style="display:none;">Nordic design. Estonian manufacturing.</span>
       </strong></p>
-      <p class="hero-meta">
-        <span data-lang="et">DSO Nordic on FerWorks OÜ poolt arendatud ja toodetud professionaalne bioohutuslahendus farmidele, kus töökindlus, lihtne kasutamine ja põhjamaistes tingimustes toimimine on olulised.</span>
-        <span data-lang="fi" style="display:none;">DSO Nordic on FerWorks OÜ:n kehittämä ja valmistama ammattimainen biosuojausratkaisu tiloille, joissa luotettavuus, helppokäyttöisyys ja toiminta pohjoismaisissa olosuhteissa ovat tärkeitä.</span>
-        <span data-lang="sv" style="display:none;">DSO Nordic är en professionell biosäkerhetslösning utvecklad och tillverkad av FerWorks OÜ för gårdar där driftsäkerhet, enkel användning och funktion i nordiska förhållanden är viktiga.</span>
-        <span data-lang="en" style="display:none;">DSO Nordic is a professional biosecurity solution developed and manufactured by FerWorks OÜ for farms where reliability, ease of use and performance in Nordic conditions matter.</span>
-      </p>
 
-      <div style="margin: 2.5rem 0; text-align: center;">
-        <img src="Image/IMG_9338.JPG" alt="DSO Nordic desinfitseerimisvärav" style="max-width: 50%; height: auto; border-radius: 10px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); border: 3px solid #F07228;">
-      </div>
-
-      <div class="hero-buttons">
+      <div class="hero-buttons" style="margin-bottom: 2rem;">
         <a href="#kontakt" class="cta-button">
           <span data-lang="et">Küsi pakkumist</span>
           <span data-lang="fi" style="display:none;">Pyydä tarjous</span>
@@ -677,6 +750,17 @@
           <span data-lang="en" style="display:none;">Technical data</span>
         </a>
       </div>
+
+      <div style="margin: 0 0 1.5rem; text-align: center;">
+        <img class="hero-product-image" src="Image/IMG_9338.JPG" alt="DSO Nordic vehicle disinfection gate" style="max-width: 50%; height: auto; border-radius: 10px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); border: 3px solid #F07228;">
+      </div>
+
+      <p class="hero-meta">
+        <span data-lang="et">DSO Nordic on FerWorks OÜ poolt arendatud ja toodetud professionaalne bioohutuslahendus farmidele, kus töökindlus, lihtne kasutamine ja põhjamaistes tingimustes toimimine on olulised.</span>
+        <span data-lang="fi" style="display:none;">DSO Nordic on FerWorks OÜ:n kehittämä ja valmistama ammattimainen biosuojausratkaisu tiloille, joissa luotettavuus, helppokäyttöisyys ja toiminta pohjoismaisissa olosuhteissa ovat tärkeitä.</span>
+        <span data-lang="sv" style="display:none;">DSO Nordic är en professionell biosäkerhetslösning utvecklad och tillverkad av FerWorks OÜ för gårdar där driftsäkerhet, enkel användning och funktion i nordiska förhållanden är viktiga.</span>
+        <span data-lang="en" style="display:none;">DSO Nordic is a professional biosecurity solution developed and manufactured by FerWorks OÜ for farms where reliability, ease of use and performance in Nordic conditions matter.</span>
+      </p>
     </div>
   </section>
 
@@ -684,10 +768,10 @@
   <section id="eelised" class="content-section">
     <div class="container">
       <h2 class="section-title">
-        <span data-lang="et">Konkurentsieelised</span>
-        <span data-lang="fi" style="display:none;">Kilpailuedut</span>
-        <span data-lang="sv" style="display:none;">Konkurrensfördelar</span>
-        <span data-lang="en" style="display:none;">Competitive advantages</span>
+        <span data-lang="et">Eelised</span>
+        <span data-lang="fi" style="display:none;">Edut</span>
+        <span data-lang="sv" style="display:none;">Fördelar</span>
+        <span data-lang="en" style="display:none;">Benefits</span>
       </h2>
       <p class="section-lead">
         <span data-lang="et">Tehnilised omadused, mis loovad farmile konkreetset väärtust.</span>
@@ -698,12 +782,12 @@
       <div class="section-content wide">
         <div class="benefits-grid">
           <div class="benefit-card">
-            <h4>
+            <h3>
               <span data-lang="et">Loodud põhjamaistele talvedele</span>
               <span data-lang="fi" style="display:none;">Suunniteltu pohjoismaisiin talviin</span>
               <span data-lang="sv" style="display:none;">Byggd för nordiska vintrar</span>
               <span data-lang="en" style="display:none;">Built for Nordic winters</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Mitte kohandatud põhjamaisetele tingimustele — loodud nende jaoks.</span>
               <span data-lang="fi" style="display:none;">Ei sovitettu pohjoismaisiin oloihin — suunniteltu niihin.</span>
@@ -712,12 +796,12 @@
             </p>
           </div>
           <div class="benefit-card">
-            <h4>
+            <h3>
               <span data-lang="et">Täielik sõiduki kate</span>
               <span data-lang="fi" style="display:none;">Kattava ajoneuvon peitto</span>
               <span data-lang="sv" style="display:none;">Full fordonsytäckning</span>
               <span data-lang="en" style="display:none;">Full vehicle coverage</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Desinfitseerimisvedelik kantakse peale ülevalt, alt ja mõlemalt küljelt.</span>
               <span data-lang="fi" style="display:none;">Desinfiointiaine levitetään ylhäältä, alhaalta ja molemmilta sivuilta.</span>
@@ -726,12 +810,12 @@
             </p>
           </div>
           <div class="benefit-card">
-            <h4>
-              <span data-lang="et">Valmis umbes 60 sekundiga</span>
-              <span data-lang="fi" style="display:none;">Valmis noin 60 sekunnissa</span>
-              <span data-lang="sv" style="display:none;">Klar på cirka 60 sekunder</span>
-              <span data-lang="en" style="display:none;">Ready in around 60 seconds</span>
-            </h4>
+            <h3>
+              <span data-lang="et">Tsükkel kuni umbes 60 sekundit</span>
+              <span data-lang="fi" style="display:none;">Sykli enintään noin 60 sekuntia</span>
+              <span data-lang="sv" style="display:none;">Cykel upp till ca 60 sekunder</span>
+              <span data-lang="en" style="display:none;">Cycle up to around 60 seconds</span>
+            </h3>
             <p>
               <span data-lang="et">Bioohutus ilma ummikuta farmi sissepääsul.</span>
               <span data-lang="fi" style="display:none;">Biosuojaus ilman pullonkaulaa tilan sisäänkäynnillä.</span>
@@ -740,17 +824,17 @@
             </p>
           </div>
           <div class="benefit-card">
-            <h4>
+            <h3>
               <span data-lang="et">Loodud tööstuslikuks kasutuseks</span>
               <span data-lang="fi" style="display:none;">Suunniteltu teolliseen käyttöön</span>
               <span data-lang="sv" style="display:none;">Byggd för industriellt bruk</span>
               <span data-lang="en" style="display:none;">Built for industrial use</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Galvaniseeritud ja roostevaba konstruktsioon nõudlikuks välistingimusteks.</span>
               <span data-lang="fi" style="display:none;">Galvanoitu ja ruostumaton rakenne vaativiin ulkooloihin.</span>
               <span data-lang="sv" style="display:none;">Galvaniserad och rostfri konstruktion för krävande utomhusmiljöer.</span>
-              <span data-lang="en" style="display:none;">Galvanised and stainless-steel construction for demanding outdoor environments.</span>
+              <span data-lang="en" style="display:none;">Galvanized and stainless-steel construction for demanding outdoor environments.</span>
             </p>
           </div>
         </div>
@@ -777,12 +861,12 @@
         <div class="process-steps">
           <div class="step-card">
             <div class="step-number">1</div>
-            <h4>
+            <h3>
               <span data-lang="et">Käivitus</span>
               <span data-lang="fi" style="display:none;">Käynnistys</span>
               <span data-lang="sv" style="display:none;">Start</span>
               <span data-lang="en" style="display:none;">Activation</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Tsükkel käivitub fotosilma läbimisel või kaugjuhtimispuldist. Märku annavad helisignaal ja kollane vilkur.</span>
               <span data-lang="fi" style="display:none;">Sykli käynnistyy valokennon ohituksella tai kaukosäätimestä. Merkkinä äänimerkki ja keltainen vilkku.</span>
@@ -792,12 +876,12 @@
           </div>
           <div class="step-card">
             <div class="step-number">2</div>
-            <h4>
+            <h3>
               <span data-lang="et">Ooteaeg</span>
               <span data-lang="fi" style="display:none;">Viive</span>
               <span data-lang="sv" style="display:none;">Fördröjning</span>
               <span data-lang="en" style="display:none;">Delay</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Pärast käivitust kulub umbes 6–7 sekundit, enne kui pihustus algab. Selle aja jooksul ei tohi sõiduk väravasse siseneda.</span>
               <span data-lang="fi" style="display:none;">Käynnistyksen jälkeen kuluu noin 6–7 sekuntia ennen suihkutuksen alkua. Ajoneuvo ei saa tänä aikana ajaa porttiin.</span>
@@ -807,12 +891,12 @@
           </div>
           <div class="step-card">
             <div class="step-number">3</div>
-            <h4>
+            <h3>
               <span data-lang="et">Läbimine</span>
               <span data-lang="fi" style="display:none;">Läpikulku</span>
               <span data-lang="sv" style="display:none;">Passage</span>
               <span data-lang="en" style="display:none;">Passage</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Sõiduk läbib värava aeglaselt (u 2,4 km/h). Vedelik kantakse peale neljast suunast — ülevalt, alt ja külgedelt. Komplektis on käsiprits rattakoobastele.</span>
               <span data-lang="fi" style="display:none;">Ajoneuvo ajaa portin läpi hitaasti (n. 2,4 km/h). Neste levitetään neljästä suunnasta — ylhäältä, alhaalta ja sivuilta. Mukana käsiruisku pyöräkoteloihin.</span>
@@ -822,12 +906,12 @@
           </div>
           <div class="step-card">
             <div class="step-number">4</div>
-            <h4>
+            <h3>
               <span data-lang="et">Tsükli kestus</span>
               <span data-lang="fi" style="display:none;">Syklin kesto</span>
               <span data-lang="sv" style="display:none;">Cykelns längd</span>
               <span data-lang="en" style="display:none;">Cycle duration</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Tsükkel kestab kuni 60 sekundit või kuni teise fotosilma läbimiseni / käsitsi peatamiseni. Pihustuskulu 100 L/min.</span>
               <span data-lang="fi" style="display:none;">Sykli kestää enintään 60 sekuntia tai toisen valokennon ohitukseen / manuaaliseen pysäytykseen. Suihkutus 100 L/min.</span>
@@ -910,12 +994,12 @@
       <div class="section-content wide">
         <div class="benefits-grid">
           <div class="benefit-card">
-            <h4>
+            <h3>
               <span data-lang="et">Sõiduki nõuded</span>
               <span data-lang="fi" style="display:none;">Ajoneuvovaatimukset</span>
               <span data-lang="sv" style="display:none;">Fordonskrav</span>
               <span data-lang="en" style="display:none;">Vehicle requirements</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Maksimaalne kõrgus 4 m. Minimaalne kliirens 120 mm. Enne läbimist sulge uksed, aknad ja muud avaused.</span>
               <span data-lang="fi" style="display:none;">Enimmäiskorkeus 4 m. Vähimmäismaavara 120 mm. Sulje ovet, ikkunat ja muut aukot ennen läpikulkua.</span>
@@ -924,12 +1008,12 @@
             </p>
           </div>
           <div class="benefit-card">
-            <h4>
+            <h3>
               <span data-lang="et">Kemikaal</span>
               <span data-lang="fi" style="display:none;">Kemikaali</span>
               <span data-lang="sv" style="display:none;">Kemikalie</span>
               <span data-lang="en" style="display:none;">Chemical</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Seade on loodud kasutamiseks umbes 1% lahusega, mille põhitoimeaine on klooramiin-T. Muude kemikaalide korral konsulteeri tootjaga.</span>
               <span data-lang="fi" style="display:none;">Laite on suunniteltu noin 1 % liuokselle, jonka päätoimeaine on klooramiini-T. Muista kemikaaleista konsultoi valmistajaa.</span>
@@ -938,12 +1022,12 @@
             </p>
           </div>
           <div class="benefit-card">
-            <h4>
+            <h3>
               <span data-lang="et">Ohutusfunktsioonid</span>
               <span data-lang="fi" style="display:none;">Turvatoiminnot</span>
               <span data-lang="sv" style="display:none;">Säkerhetsfunktioner</span>
               <span data-lang="en" style="display:none;">Safety features</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Hädaseiskamine, mahuti tasemeandur, helisignaal ja vilkur. Tsükli ajal peab juht jääma kabiini.</span>
               <span data-lang="fi" style="display:none;">Hätäseis, säiliön tasonanturi, äänimerkki ja vilkku. Kuljettajan on pysyttävä ohjaamossa syklin aikana.</span>
@@ -952,12 +1036,12 @@
             </p>
           </div>
           <div class="benefit-card">
-            <h4>
+            <h3>
               <span data-lang="et">Paigaldus</span>
               <span data-lang="fi" style="display:none;">Asennus</span>
               <span data-lang="sv" style="display:none;">Installation</span>
               <span data-lang="en" style="display:none;">Installation</span>
-            </h4>
+            </h3>
             <p>
               <span data-lang="et">Paigaldusala vähemalt 7 × 3 m. Aluspind: asfalt, betoon või tihendatud puistepinnas. Toide: CEE 16A, 3-faas. Paigaldust tohivad teha volitatud isikud.</span>
               <span data-lang="fi" style="display:none;">Asennusalue vähintään 7 × 3 m. Alusta: asfaltti, betoni tai tiivistetty murske. Virta: CEE 16A, 3-vaihe. Asennuksen saa tehdä valtuutettu henkilö.</span>
@@ -1051,7 +1135,12 @@
                 <span data-lang="sv" style="display:none;">Strömförsörjning</span>
                 <span data-lang="en" style="display:none;">Power supply</span>
               </strong></td>
-              <td>380 V / IP66 · CEE 16A, 3-faas</td>
+              <td>
+                <span data-lang="et">380 V / IP66 · CEE 16A, 3-faas</span>
+                <span data-lang="fi" style="display:none;">380 V / IP66 · CEE 16A, 3-vaihe</span>
+                <span data-lang="sv" style="display:none;">380 V / IP66 · CEE 16A, 3-fas</span>
+                <span data-lang="en" style="display:none;">380 V / IP66 · CEE 16A, 3-phase</span>
+              </td>
             </tr>
             <tr>
               <td><strong>
@@ -1078,7 +1167,12 @@
                 <span data-lang="sv" style="display:none;">Arbetstemperatur</span>
                 <span data-lang="en" style="display:none;">Operating temperature</span>
               </strong></td>
-              <td>−20 °C kuni +40 °C</td>
+              <td>
+                <span data-lang="et">−20 °C kuni +40 °C</span>
+                <span data-lang="fi" style="display:none;">−20 °C – +40 °C</span>
+                <span data-lang="sv" style="display:none;">−20 °C till +40 °C</span>
+                <span data-lang="en" style="display:none;">−20 °C to +40 °C</span>
+              </td>
             </tr>
             <tr>
               <td><strong>
@@ -1177,6 +1271,24 @@
         <span data-lang="sv" style="display:none;">Desinfektionsporten D.S.O Nordic uppfyller EG-försäkran om överensstämmelse (FerWorks OÜ).</span>
         <span data-lang="en" style="display:none;">The D.S.O Nordic disinfection gate is covered by an EC declaration of conformity (FerWorks OÜ).</span>
       </p>
+      <div class="ce-block">
+        <svg class="ce-mark" viewBox="0 0 120 80" role="img" aria-label="CE">
+          <title>CE</title>
+          <!-- Stylised CE marking for display with Declaration of Conformity -->
+          <path fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="butt"
+            d="M52 12c-18 0-32 14-32 28s14 28 32 28" />
+          <path fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="butt"
+            d="M108 12c-18 0-32 14-32 28s14 28 32 28" />
+          <path fill="none" stroke="currentColor" stroke-width="10"
+            d="M76 40h28" />
+        </svg>
+        <p>
+          <span data-lang="et">Toode kannab CE-märgist vastavalt kohalduvatele EL nõuetele. Aluseks on EÜ vastavusdeklaratsioon.</span>
+          <span data-lang="fi" style="display:none;">Tuotteessa on CE-merkintä sovellettavien EU-vaatimusten mukaisesti. Perustana on EY-vaatimustenmukaisuusvakuutus.</span>
+          <span data-lang="sv" style="display:none;">Produkten bär CE-märkning enligt tillämpliga EU-krav. Underlaget är EG-försäkran om överensstämmelse.</span>
+          <span data-lang="en" style="display:none;">The product carries CE marking in line with applicable EU requirements, based on the EC declaration of conformity.</span>
+        </p>
+      </div>
       <div class="section-content">
         <ul class="compliance-list">
           <li>
@@ -1340,7 +1452,7 @@
       </p>
       <div class="install-list">
         <div class="install-card">
-          <h4>Ekseko</h4>
+          <h3>Ekseko</h3>
           <p>
             <span data-lang="et">1 värav</span>
             <span data-lang="fi" style="display:none;">1 portti</span>
@@ -1349,7 +1461,7 @@
           </p>
         </div>
         <div class="install-card">
-          <h4>Viru Peekon OÜ</h4>
+          <h3>Viru Peekon OÜ</h3>
           <p>
             <span data-lang="et">7 väravat</span>
             <span data-lang="fi" style="display:none;">7 porttia</span>
@@ -1392,6 +1504,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -1411,8 +1525,14 @@
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href || href === '#') return;
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        if (href === '#top') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          return;
+        }
+        const target = document.querySelector(href);
         if (target) {
           target.scrollIntoView({
             behavior: 'smooth',
@@ -1438,6 +1558,10 @@
         } else {
           el.style.display = 'none';
         }
+      });
+      document.querySelectorAll('.lang-flag').forEach(function(btn) {
+        const active = btn.getAttribute('data-lang-btn') === lang;
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
       });
       document.documentElement.lang = lang;
       localStorage.setItem('dso-lang', lang);
