@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "dsonordic", "runtimeExecutable": "node", "runtimeArgs": ["tools/serve.mjs", "8781"], "port": 8781 }
+  ]
+}

@@ -1,0 +1,35 @@
+# DSO Nordic
+
+> Automated vehicle disinfection gate for farms, designed and manufactured in
+> Estonia by FerWorks OÜ. Built for Northern European conditions: it operates
+> from −20 °C to +40 °C with a disinfection cycle of up to 60 seconds.
+
+DSO Nordic reduces the risk of pathogens such as African swine fever and
+foot-and-mouth disease entering a farm on vehicle surfaces. Liquid is applied
+from four directions — above, below and both sides — as the vehicle passes
+through at roughly 2.4 km/h.
+
+## Key specifications
+- Operating temperature: −20 °C to +40 °C
+- Cycle duration: up to 60 seconds; 5–7 second delay before spraying starts
+- Spray rate: 100 L/min at approximately 4 bar
+- Internal dimensions: 4.0 m × 4.8 m (W × H); external 5.4 m × 5.1 m
+- Material: galvanised and stainless steel
+- Tank: 1000 L IBC container (PE)
+- Power: 380 V / IP66, CEE 16A three-phase
+- Noise level: ≤ 70 dB(A)
+- Installation area: 7 m × 3 m on asphalt, concrete or compacted aggregate
+- Vehicle limits: max height 4 m, min ground clearance 120 mm
+- Disinfectant: approx. 1% solution, chloramine-T based
+- Lead time: 6–8 weeks
+- Conformity: EC Declaration of Conformity covering applicable machinery and EMC requirements
+
+## Pages
+- [Estonian](https://www.dsonordic.com/): Sõidukite desinfitseerimisvärav farmidele
+- [Finnish](https://www.dsonordic.com/fi/): Ajoneuvojen desinfiointiportti tiloille
+- [Swedish](https://www.dsonordic.com/sv/): Desinfektionsport för fordon till gårdar
+- [English](https://www.dsonordic.com/en/): Vehicle disinfection gate for farms
+
+## Contact
+Manufacturer: FerWorks OÜ, Estonia — mail@ferworks.eu
+Regional partner (Baltics): Dimedium
