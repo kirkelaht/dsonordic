@@ -2,23 +2,98 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/dsonordic.html", "destination": "/", "permanent": true },
-    { "source": "/dsonordic/dsonordic.html", "destination": "/", "permanent": true },
-    { "source": "/dsonordic", "destination": "/", "permanent": true },
-    { "source": "/Image/:path*", "destination": "/image/:path*", "permanent": true }
+    {
+      "source": "/dsonordic.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/dsonordic/dsonordic.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/dsonordic/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/IMG_9338.JPG",
+      "destination": "/image/dso-nordic-gate.webp",
+      "permanent": true
+    },
+    {
+      "source": "/Image/IMG_9338.JPG",
+      "destination": "/image/dso-nordic-gate.webp",
+      "permanent": true
+    },
+    {
+      "source": "/image/IMG_9338.JPG",
+      "destination": "/image/dso-nordic-gate.webp",
+      "permanent": true
+    },
+    {
+      "source": "/Image/eestilipp.png",
+      "destination": "/image/eestilipp.png",
+      "permanent": true
+    },
+    {
+      "source": "/eestilipp.png",
+      "destination": "/image/eestilipp.png",
+      "permanent": true
+    },
+    {
+      "source": "/Image/rootsilipp.png",
+      "destination": "/image/rootsilipp.png",
+      "permanent": true
+    },
+    {
+      "source": "/rootsilipp.png",
+      "destination": "/image/rootsilipp.png",
+      "permanent": true
+    },
+    {
+      "source": "/Image/soomelipp.png",
+      "destination": "/image/soomelipp.png",
+      "permanent": true
+    },
+    {
+      "source": "/soomelipp.png",
+      "destination": "/image/soomelipp.png",
+      "permanent": true
+    },
+    {
+      "source": "/Image/uklipp.png",
+      "destination": "/image/uklipp.png",
+      "permanent": true
+    },
+    {
+      "source": "/uklipp.png",
+      "destination": "/image/uklipp.png",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/image/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ]
